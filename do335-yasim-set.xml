@@ -1,0 +1,16 @@
+<!--
+************************************************************************
+Dornier Do 335 FDM YASim
+BARANGER Emmanuel                                                   2007
+************************************************************************
+-->
+
+<PropertyList include="do335-base.xml">
+
+  <sim>
+    <description>Dornier Do 335 (Yasim)</description>
+    <flight-model>yasim</flight-model>
+    <aero>do335-yasim</aero>
+  </sim>
+
+</PropertyList>

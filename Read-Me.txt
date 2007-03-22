@@ -1,0 +1,71 @@
+English/Français
+
+[English]
+----------
+
+A little history
+================
+
+Dornier Do 335
+==============
+
+Manufacturer                  : Dornier
+Type                          : Fighter
+Year                          : 1944
+Powerplant                    : Daimler-Benz DB 605E-1 (1900 Ch) x2
+Wingspan                      : 13.80 m
+Length                        : 13.87 m
+Height                        : 4 m
+Loaded weight                 : 7400 kg
+Cruise speed                  : 600 km/h (max 765 km/h)
+Range                         : 1 380 km
+Crew                          : 1 
+
+Some useful keys:
+=================
+
+d : Open/Close canopy
+
+Thanks
+======
+
+===============
+BARANGER Emmanuel
+March, 22, 2007. 
+
+
+[Français]
+----------
+
+Un peu d'histoire
+=================
+
+Dornier Do 335
+==============
+
+Constructeur                  : Dornier
+Type                          : Chasseur
+Année                         : 1944
+Moteur                        : Daimler-Benz DB 605E-1 (1900 ch) x2
+Envergure                     : 13.80 m 
+Longueur                      : 13.87 m
+Hauteur                       : 4 m
+Poids estimé au décollage     : 7400 kg
+Vitesse estimée de croisière  : 600 km/h (max 765 km/h)
+Autonomie estimée             : 1 380 km
+Equipage                      : 1
+
+
+Quelques touches utiles :
+=========================
+
+d : Ouverture/Fermeture de la verrière
+
+Remerciements
+=============
+
+===============
+BARANGER Emmanuel
+DELRUE   Benjamin
+22 Mars 2007.
+

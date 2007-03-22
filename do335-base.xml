@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <sim>
+ 
+  <status>devel</status>
+  <author>BARANGER Emmanuel</author>
+  
+  <fuel-fraction>1.0</fuel-fraction>
+  
+  <sound>
+    <audible>true</audible>
+    <path>Aircraft/DO-335/Sounds/do335-sound.xml</path>
+  </sound>
+
+  <model>
+   <path>Aircraft/DO-335/Models/do335.xml</path>
+  </model>
+
+  <startup>
+   <splash-texture>Aircraft/DO-335/do335-splash.rgb</splash-texture>
+  </startup>
+
+  <virtual-cockpit archive="y">true</virtual-cockpit>
+  <allow-toggle-cockpit archive="y">true</allow-toggle-cockpit>
+
+  <chase-distance-m type="double" archive="y">-30.0</chase-distance-m>
+  
+  <view n="0">
+    <internal archive="y">true</internal>
+    <config>
+      <x-offset-m archive="y"> 0.000 </x-offset-m>  <!-- Right -->
+      <y-offset-m archive="y"> 0.756 </y-offset-m>  <!-- Up    -->
+      <z-offset-m archive="y">-2.611 </z-offset-m>  <!-- Back  -->
+      <pitch-offset-deg>0.0</pitch-offset-deg>
+      <default-field-of-view-deg>55</default-field-of-view-deg>
+    </config>
+  </view>
+  
+  <multiplay>
+    <chat_display>1</chat_display>
+  </multiplay>
+
+  <help>
+    <title>Dornier Do 335</title>
+    <key>
+      <name>d</name>
+      <desc>Open/Close canopy</desc>
+    </key>
+  </help>
+    
+ </sim>
+
+ <engines>
+   <engine n="0">
+     <engine-num type="int">0</engine-num>
+     <running>true</running>
+   </engine>
+   <engine n="1">
+     <engine-num type="int">1</engine-num>
+     <running>true</running>
+   </engine>
+ </engines>
+
+ <consumables>
+   <fuel>
+     <tank n="0">
+       <tank-num type="int">0</tank-num>
+       <level-gal_us archive="y">2070</level-gal_us>
+     </tank>
+   </fuel>
+ </consumables>
+
+ <input>
+   <keyboard include="Nasal/do335-keyboard.xml">
+   </keyboard>
+ </input>
+ 
+ <nasal>
+   <do335>
+     <file>Aircraft/DO-335/Nasal/doors.nas</file>
+   </do335>
+ </nasal>
+
+</PropertyList>
