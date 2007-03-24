@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <model>
+    <path>Aircraft/DO-335/Models/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m>  0.019 </x-m>
+      <y-m> -0.027 </y-m>
+      <z-m>  0.032 </z-m>
+    </offsets>
+  </model>
+ 
+</PropertyList>
