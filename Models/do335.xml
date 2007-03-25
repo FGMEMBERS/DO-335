@@ -31,8 +31,6 @@
    <object-name>flapD</object-name>
    <object-name>flapG</object-name>
    <object-name>roueA</object-name>
-   <object-name>articule01</object-name>
-   <object-name>articule02</object-name>
    <object-name>roueG</object-name>
    <object-name>roueD</object-name>
    <object-name>axeA1</object-name>
@@ -45,6 +43,16 @@
    <object-name>porteAD</object-name>
    <object-name>porteAG</object-name>
    <object-name>porteD1</object-name>
+   <object-name>clapet1</object-name>
+   <object-name>clapet2</object-name>
+   <object-name>clapet3</object-name>
+   <object-name>clapet4</object-name>
+   <object-name>clapet5</object-name>
+   <object-name>clapet6</object-name>
+   <object-name>clapet7</object-name>
+   <object-name>clapet8</object-name>
+   <object-name>clapet9</object-name>
+   <object-name>clapet10</object-name>
 
    <!-- draw this at last (order critical!) -->
    <object-name>Cube</object-name>
@@ -729,4 +737,286 @@
       <z> 0.000 </z>
     </axis>
   </animation>
+  
+<!-- Clapets du capot -->
+  <animation>
+    <type>rotate</type>
+    <object-name>clapet1</object-name>
+    <property>instrumentation/doors/passenger/position-norm</property>
+    <interpolation>
+      <entry>
+        <ind> 0.0 </ind>
+        <dep> 0.0 </dep>
+      </entry>
+      <entry>
+        <ind>  0.3 </ind>
+        <dep> 10.0 </dep>
+      </entry>
+      <entry>
+        <ind>  1.0 </ind>
+        <dep> 10.0 </dep>
+      </entry>
+    </interpolation>
+    <axis>
+     <x1-m> -5.993 </x1-m>
+     <y1-m> -0.177 </y1-m>
+     <z1-m>  0.430 </z1-m>
+     <x2-m> -5.993 </x2-m>
+     <y2-m> -0.395 </y2-m>
+     <z2-m>  0.260 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>clapet2</object-name>
+    <property>instrumentation/doors/passenger/position-norm</property>
+    <interpolation>
+      <entry>
+        <ind> 0.0 </ind>
+        <dep> 0.0 </dep>
+      </entry>
+      <entry>
+        <ind>  0.3 </ind>
+        <dep> 10.0 </dep>
+      </entry>
+      <entry>
+        <ind>  1.0 </ind>
+        <dep> 10.0 </dep>
+      </entry>
+    </interpolation>
+    <axis>
+     <x1-m> -5.993 </x1-m>
+     <y1-m> -0.395 </y1-m>
+     <z1-m>  0.260 </z1-m>
+     <x2-m> -5.993 </x2-m>
+     <y2-m> -0.463 </y2-m>
+     <z2-m>  0.003 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>clapet3</object-name>
+    <property>instrumentation/doors/passenger/position-norm</property>
+    <interpolation>
+      <entry>
+        <ind> 0.0 </ind>
+        <dep> 0.0 </dep>
+      </entry>
+      <entry>
+        <ind>  0.3 </ind>
+        <dep> 10.0 </dep>
+      </entry>
+      <entry>
+        <ind>  1.0 </ind>
+        <dep> 10.0 </dep>
+      </entry>
+    </interpolation>
+    <axis>
+     <x1-m> -5.993 </x1-m>
+     <y1-m> -0.463 </y1-m>
+     <z1-m>  0.003 </z1-m>
+     <x2-m> -5.993 </x2-m>
+     <y2-m> -0.385 </y2-m>
+     <z2-m> -0.254 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>clapet4</object-name>
+    <property>instrumentation/doors/passenger/position-norm</property>
+    <interpolation>
+      <entry>
+        <ind> 0.0 </ind>
+        <dep> 0.0 </dep>
+      </entry>
+      <entry>
+        <ind>  0.3 </ind>
+        <dep> 10.0 </dep>
+      </entry>
+      <entry>
+        <ind>  1.0 </ind>
+        <dep> 10.0 </dep>
+      </entry>
+    </interpolation>
+    <axis>
+     <x1-m> -5.993 </x1-m>
+     <y1-m> -0.385 </y1-m>
+     <z1-m> -0.254 </z1-m>
+     <x2-m> -5.993 </x2-m>
+     <y2-m> -0.177 </y2-m>
+     <z2-m> -0.424 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>clapet5</object-name>
+    <property>instrumentation/doors/passenger/position-norm</property>
+    <interpolation>
+      <entry>
+        <ind> 0.0 </ind>
+        <dep> 0.0 </dep>
+      </entry>
+      <entry>
+        <ind>  0.3 </ind>
+        <dep> 10.0 </dep>
+      </entry>
+      <entry>
+        <ind>  1.0 </ind>
+        <dep> 10.0 </dep>
+      </entry>
+    </interpolation>
+    <axis>
+     <x1-m> -5.993 </x1-m>
+     <y1-m> -0.177 </y1-m>
+     <z1-m> -0.424 </z1-m>
+     <x2-m> -5.993 </x2-m>
+     <y2-m>  0.177 </y2-m>
+     <z2-m> -0.424 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>clapet6</object-name>
+    <property>instrumentation/doors/passenger/position-norm</property>
+    <interpolation>
+      <entry>
+        <ind> 0.0 </ind>
+        <dep> 0.0 </dep>
+      </entry>
+      <entry>
+        <ind>  0.3 </ind>
+        <dep> 10.0 </dep>
+      </entry>
+      <entry>
+        <ind>  1.0 </ind>
+        <dep> 10.0 </dep>
+      </entry>
+    </interpolation>
+    <axis>
+     <x1-m> -5.993 </x1-m>
+     <y1-m>  0.177 </y1-m>
+     <z1-m> -0.424 </z1-m>
+     <x2-m> -5.993 </x2-m>
+     <y2-m>  0.385 </y2-m>
+     <z2-m> -0.254 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>clapet7</object-name>
+    <property>instrumentation/doors/passenger/position-norm</property>
+    <interpolation>
+      <entry>
+        <ind> 0.0 </ind>
+        <dep> 0.0 </dep>
+      </entry>
+      <entry>
+        <ind>  0.3 </ind>
+        <dep> 10.0 </dep>
+      </entry>
+      <entry>
+        <ind>  1.0 </ind>
+        <dep> 10.0 </dep>
+      </entry>
+    </interpolation>
+    <axis>
+     <x1-m> -5.993 </x1-m>
+     <y1-m>  0.385 </y1-m>
+     <z1-m> -0.254 </z1-m>
+     <x2-m> -5.993 </x2-m>
+     <y2-m>  0.463 </y2-m>
+     <z2-m>  0.003 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>clapet8</object-name>
+    <property>instrumentation/doors/passenger/position-norm</property>
+    <interpolation>
+      <entry>
+        <ind> 0.0 </ind>
+        <dep> 0.0 </dep>
+      </entry>
+      <entry>
+        <ind>  0.3 </ind>
+        <dep> 10.0 </dep>
+      </entry>
+      <entry>
+        <ind>  1.0 </ind>
+        <dep> 10.0 </dep>
+      </entry>
+    </interpolation>
+    <axis>
+     <x1-m> -5.993 </x1-m>
+     <y1-m>  0.463 </y1-m>
+     <z1-m>  0.003 </z1-m>
+     <x2-m> -5.993 </x2-m>
+     <y2-m>  0.385 </y2-m>
+     <z2-m>  0.260 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>clapet9</object-name>
+    <property>instrumentation/doors/passenger/position-norm</property>
+    <interpolation>
+      <entry>
+        <ind> 0.0 </ind>
+        <dep> 0.0 </dep>
+      </entry>
+      <entry>
+        <ind>  0.3 </ind>
+        <dep> 10.0 </dep>
+      </entry>
+      <entry>
+        <ind>  1.0 </ind>
+        <dep> 10.0 </dep>
+      </entry>
+    </interpolation>
+    <axis>
+     <x1-m> -5.993 </x1-m>
+     <y1-m>  0.385 </y1-m>
+     <z1-m>  0.260 </z1-m>
+     <x2-m> -5.993 </x2-m>
+     <y2-m>  0.177 </y2-m>
+     <z2-m>  0.430 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>clapet10</object-name>
+    <property>instrumentation/doors/passenger/position-norm</property>
+    <interpolation>
+      <entry>
+        <ind> 0.0 </ind>
+        <dep> 0.0 </dep>
+      </entry>
+      <entry>
+        <ind>  0.3 </ind>
+        <dep> 10.0 </dep>
+      </entry>
+      <entry>
+        <ind>  1.0 </ind>
+        <dep> 10.0 </dep>
+      </entry>
+    </interpolation>
+    <axis>
+     <x1-m> -5.993 </x1-m>
+     <y1-m>  0.177 </y1-m>
+     <z1-m>  0.430 </z1-m>
+     <x2-m> -5.993 </x2-m>
+     <y2-m> -0.177 </y2-m>
+     <z2-m>  0.430 </z2-m>
+    </axis>
+  </animation>
+  
 </PropertyList>

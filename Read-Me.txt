@@ -25,6 +25,7 @@ Some useful keys:
 =================
 
 d : Open/Close canopy
+D : Open/Close valves
 
 Thanks
 ======
@@ -60,6 +61,7 @@ Quelques touches utiles :
 =========================
 
 d : Ouverture/Fermeture de la verrière
+D : Ouverture/Fermeture des clapets
 
 Remerciements
 =============

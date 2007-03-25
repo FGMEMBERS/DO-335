@@ -48,6 +48,10 @@
       <name>d</name>
       <desc>Open/Close canopy</desc>
     </key>
+    <key>
+      <name>D</name>
+      <desc>Open/Close valves</desc>
+    </key>
   </help>
     
  </sim>
