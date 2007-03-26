@@ -11,17 +11,18 @@
  
  <animation>
    <!-- draw these first (in no particular order) -->
+   <object-name>Cylinder.005</object-name>
+   <object-name>Cube.010</object-name>
+   <object-name>articule01</object-name>
+   <object-name>articule02</object-name>
    <object-name>Cylinder.009</object-name>
    <object-name>Cylinder</object-name>
    <object-name>Cylinder.023</object-name>
    <object-name>Cylinder.003</object-name>
-   <object-name>Cylinder.002</object-name>
-   <object-name>Cylinder.004</object-name>
    <object-name>Cylinder.010</object-name>
    <object-name>Pilot</object-name>
    <object-name>Plane.004</object-name>
    <object-name>Plane.005</object-name>
-   <object-name>Plane.006</object-name>
    <object-name>Tube</object-name>
    <object-name>Tube.001</object-name>
    <object-name>aileronD</object-name>
