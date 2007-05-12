@@ -64,10 +64,10 @@
    <object-name>bolB</object-name>
    <object-name>heliceA</object-name>
    <object-name>heliceB</object-name>
-   <object-name>propdiscA</object-name>
    <object-name>propblurA</object-name>
-   <object-name>propdiscB</object-name>
    <object-name>propblurB</object-name>
+   <object-name>propdiscA</object-name>
+   <object-name>propdiscB</object-name>
  </animation>
 
 <!-- Planches de bord -->
@@ -95,6 +95,26 @@
 
 <!-- Les hélices --> 
 <!-- Séléction de l'objet visible en fonction des rpm -->
+  <animation>
+    <type>spin</type>
+    <object-name>heliceA</object-name>
+    <object-name>bolA</object-name>
+    <object-name>propblurA</object-name>
+    <object-name>propdiscA</object-name>
+    <property>engines/engine[0]/rpm</property>
+    <factor> 1 </factor>
+    <center>
+      <x-m> -6.484 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.039 </z-m>
+    </center>
+    <axis>
+      <x> 1.000 </x>
+      <y> 0.000 </y>
+      <z> 0.000 </z>
+    </axis>
+  </animation>
+
   <animation>
     <type>select</type>
     <object-name>propdiscA</object-name>
@@ -136,16 +156,16 @@
 
   <animation>
     <type>spin</type>
-    <object-name>heliceA</object-name>
-    <object-name>bolA</object-name>
-    <object-name>propdiscA</object-name>
-    <object-name>propblurA</object-name>
-    <property>engines/engine[0]/rpm</property>
-    <factor> 1 </factor>
+    <object-name>heliceB</object-name>
+    <object-name>bolB</object-name>
+    <object-name>propblurB</object-name>
+    <object-name>propdiscB</object-name>
+    <property>engines/engine[1]/rpm</property>
+    <factor> -1 </factor>
     <center>
-      <x-m> -6.484 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m>  0.039 </z-m>
+      <x-m> 6.209 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.447 </z-m>
     </center>
     <axis>
       <x> 1.000 </x>
@@ -153,7 +173,7 @@
       <z> 0.000 </z>
     </axis>
   </animation>
-
+ 
   <animation>
     <type>select</type>
     <object-name>propdiscB</object-name>
@@ -193,26 +213,6 @@
     </condition>
   </animation>
 
-  <animation>
-    <type>spin</type>
-    <object-name>heliceB</object-name>
-    <object-name>bolB</object-name>
-    <object-name>propdiscB</object-name>
-    <object-name>propblurB</object-name>
-    <property>engines/engine[1]/rpm</property>
-    <factor> -1 </factor>
-    <center>
-      <x-m> 6.209 </x-m>
-      <y-m> 0.000 </y-m>
-      <z-m> 0.447 </z-m>
-    </center>
-    <axis>
-      <x> 1.000 </x>
-      <y> 0.000 </y>
-      <z> 0.000 </z>
-    </axis>
-  </animation>
- 
 <!-- Gouverne de direction -->
   <animation>
     <type>rotate</type>
