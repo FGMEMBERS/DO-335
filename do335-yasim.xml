@@ -172,7 +172,7 @@
 	   cruise-speed="197"
            cruise-rpm="2100" 
 	   cruise-alt="20000"
-           min-rpm="1600" 
+           min-rpm="100" 
 	   max-rpm="2700">
           <actionpt x="6.484" 
 	            y="0" 
