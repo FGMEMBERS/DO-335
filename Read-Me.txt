@@ -5,6 +5,9 @@ English/Français
 
 A little history
 ================
+In 1944 the record of the official world speed for a piston apparatus was held by Heinkel He-110 with 746 km/h.
+The same year Dornier Do 335 was capable of a maximum speed of 765 km/h to 6500 meters.
+It could go up to 8000 meters in 14,5 seconds. Thus it outclassed all the allied hunters which were contemporary for him.
 
 Dornier Do 335
 ==============
@@ -29,10 +32,14 @@ D : Open/Close valves
 
 Thanks
 ======
+Detlef FABER for new FDM
 
 ===============
 BARANGER Emmanuel
-March, 22, 2007. 
+May, 13, 2007. 
+
+http://helijah.free.fr/flightgear/hangar.htm
+embaranger@free.fr
 
 
 [Français]
@@ -40,6 +47,9 @@ March, 22, 2007.
 
 Un peu d'histoire
 =================
+En 1944 le reccord du monde officiel de vitesse pour un appareil à piston était détenu par le Heinkel He-110 avec 746 Km/h.
+La même année le Dornier Do 335 était capable d'une vitesse maximum de 765 Km/h à 6500 mètres. 
+Il pouvait monter à 8000 mètres en 14,5 secondes. Ainsi il surclassait tous les chasseurs alliés qui lui étaient contemporains.
 
 Dornier Do 335
 ==============
@@ -65,9 +75,11 @@ D : Ouverture/Fermeture des clapets
 
 Remerciements
 =============
+Detlef FABER pour le nouveau modèle de vol.
 
 ===============
 BARANGER Emmanuel
-DELRUE   Benjamin
-22 Mars 2007.
+13 Mai 2007.
 
+http://helijah.free.fr/flightgear/hangar.htm
+embaranger@free.fr
