@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+
+<!-- Attitude/Turn Indicator -->
+
+<PropertyList>
+
+ <path>ai.ac</path>
+
+ <animation>
+   <type>rotate</type>
+   <object-name>AttitudeBall</object-name>
+   <property>orientation/roll-deg</property>
+   <factor>1</factor>
+   <center>
+     <x-m>-0.020 </x-m>
+     <y-m> 0.000 </y-m>
+     <z-m> 0.000 </z-m>
+   </center>
+   <axis>
+     <x> 1 </x>
+     <y> 0 </y>
+     <z> 0 </z>
+   </axis>
+ </animation>  
+
+ <animation>
+   <type>rotate</type>
+   <object-name>AttitudeBall</object-name>
+   <property>orientation/pitch-deg</property>
+   <factor>1</factor>
+   <center>
+     <x-m> -0.020 </x-m>
+     <y-m>  0.000 </y-m>
+     <z-m>  0.000 </z-m>
+   </center>
+   <axis>
+     <x> 0 </x>
+     <y> 1 </y>
+     <z> 0 </z>
+   </axis>
+ </animation>  
+
+ <animation>
+   <type>rotate</type>
+   <object-name>SkyPointer</object-name>
+   <property>orientation/roll-deg</property>
+   <factor>1</factor>
+   <center>
+     <x-m> 0.019 </x-m>
+     <y-m> 0.000 </y-m>
+     <z-m> 0.000 </z-m>
+   </center>
+   <axis>
+     <x> 1 </x>
+     <y> 0 </y>
+     <z> 0 </z>
+   </axis>
+ </animation>
+ 
+ <animation>
+   <type>rotate</type>
+   <object-name>BallTurn</object-name>
+   <property>/instrumentation/slip-skid-ball/indicated-slip-skid</property>
+   <interpolation>
+     <entry>
+       <ind>  -1.1 </ind>
+       <dep> -22.0 </dep>
+     </entry>
+     <entry>
+       <ind>  1.1 </ind>
+       <dep> 22.0 </dep>
+     </entry>
+   </interpolation>
+   <center>
+     <x-m> 0.001 </x-m>
+     <y-m> 0.000 </y-m>
+     <z-m> 0.006 </z-m>
+   </center>
+   <axis>
+     <x> 1 </x>
+     <y> 0 </y>
+     <z> 0 </z>
+   </axis>
+ </animation>
+
+ <animation>
+   <type>material</type>
+   <object-name>AttitudeBall</object-name>
+   <object-name>SkyPointer</object-name>
+   <object-name>BallTurn</object-name>
+   <object-name>FaceTurn</object-name>
+   <emission>
+     <red>0.6</red>
+     <green>0.3</green>
+     <blue>0.3</blue>
+     <factor-prop>controls/lighting/instruments-norm</factor-prop>
+   </emission> 
+ </animation>    
+
+</PropertyList>
