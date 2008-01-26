@@ -1,4 +1,4 @@
-English/FranÃ§ais
+English/Français
 
 [English]
 ----------
@@ -15,7 +15,7 @@ Dornier Do 335
 Manufacturer                  : Dornier
 Type                          : Fighter
 Year                          : 1944
-Powerplant                    : Daimler-Benz DB 605E-1 (1900 Ch) x2
+Powerplant                    : Daimler-Benz DB 603 E (1800 Ch) x2
 Wingspan                      : 13.80 m
 Length                        : 13.87 m
 Height                        : 4 m
@@ -33,6 +33,8 @@ D : Open/Close valves
 Thanks
 ======
 
+Pierre GEOFFROY for this help on FDM
+
 ===============
 BARANGER Emmanuel
 May, 13, 2007. 
@@ -48,7 +50,7 @@ embaranger@free.fr
 Un peu d'histoire
 =================
 En 1944 le reccord du monde officiel de vitesse pour un appareil à  piston était détenu par le Heinkel He-110 avec 746 Km/h.
-La même année le Dornier Do 335 était capable d'une vitesse maximum de 765 Km/h Ã  6500 mètres. 
+La même année le Dornier Do 335 était capable d'une vitesse maximum de 765 Km/h à  6500 mètres. 
 Il pouvait monter à  8000 màtres en 14,5 secondes. Ainsi il surclassait tous les chasseurs alliés qui lui étaient contemporains.
 
 Dornier Do 335
@@ -57,7 +59,7 @@ Dornier Do 335
 Constructeur                  : Dornier
 Type                          : Chasseur
 Année                         : 1944
-Moteur                        : Daimler-Benz DB 605E-1 (1900 ch) x2
+Moteur                        : Daimler-Benz DB 603 E (1800 ch) x2
 Envergure                     : 13.80 m 
 Longueur                      : 13.87 m
 Hauteur                       : 4 m
@@ -75,6 +77,8 @@ D : Ouverture/Fermeture des clapets
 
 Remerciements
 =============
+
+Pierre GEOFFROY pour son aide sur le FDM
 
 ===============
 BARANGER Emmanuel
