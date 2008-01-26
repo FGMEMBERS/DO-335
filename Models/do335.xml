@@ -27,7 +27,9 @@
     <object-name>roueG</object-name>
     <object-name>roueD</object-name>
     <object-name>axeG1</object-name>
+    <object-name>axeG2</object-name>
     <object-name>axeD1</object-name>
+    <object-name>axeD2</object-name>
     <object-name>porteG</object-name>
     <object-name>porteD</object-name>
     <object-name>porteG1</object-name>
@@ -91,7 +93,7 @@
     </condition>
   </animation>
 
-  <!-- HÃ©lice avant --> 
+  <!-- Hélice avant --> 
   <animation>
     <name>HeliceCompleteA</name>
     <object-name>propdiscA</object-name>
@@ -100,7 +102,7 @@
     <object-name>bolA</object-name>
   </animation>
 
-  <!-- SÃ©lÃ©ction de l'objet visible en fonction des rpm -->
+  <!-- Séléction de l'objet visible en fonction des rpm -->
   <animation>
     <type>select</type>
     <object-name>propdiscA</object-name>
@@ -157,7 +159,7 @@
     </axis>
   </animation>
 
-  <!-- HÃ©lice arriÃ¨re -->
+  <!-- Hélice arrière -->
   <animation>
     <name>HeliceCompleteB</name>
     <object-name>propdiscB</object-name>
@@ -166,7 +168,7 @@
     <object-name>bolB</object-name>
   </animation>
 
-  <!-- SÃ©lÃ©ction de l'objet visible en fonction des rpm -->
+  <!-- Séléction de l'objet visible en fonction des rpm -->
   <animation>
     <type>select</type>
     <object-name>propdiscB</object-name>
@@ -384,12 +386,20 @@
     <object-name>articule01</object-name>
     <object-name>articule02</object-name>
     <property>gear/gear[0]/position-norm</property>
-    <factor> 122.5 </factor>
-    <offset-deg>-122.5</offset-deg>
+    <interpolation>
+      <entry>
+        <ind>    0.0 </ind>
+	<dep> -125.0 </dep>
+      </entry>
+      <entry>
+        <ind> 1.0 </ind>
+	<dep> 0.0 </dep>
+      </entry>
+    </interpolation>
     <center>
       <x-m> -4.127 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m> -0.357 </z-m>
+      <z-m> -0.355 </z-m>
     </center>
     <axis>
       <x>  0.0 </x>
@@ -458,11 +468,12 @@
     <type>rotate</type>
     <object-name>roueG</object-name>
     <object-name>axeG1</object-name>
+    <object-name>axeG2</object-name>
     <property>gear/gear[1]/position-norm</property>
     <interpolation>
       <entry>
         <ind>  0.0 </ind>
-	<dep> 86.4 </dep>
+	<dep> 80.0 </dep>
       </entry>
       <entry>
         <ind> 1.0 </ind>
@@ -472,7 +483,7 @@
     <center>
       <x-m> -0.840 </x-m>
       <y-m> -2.560 </y-m>
-      <z-m> -0.206 </z-m>
+      <z-m> -0.059 </z-m>
     </center>
     <axis>
       <x>  1.0 </x>
@@ -539,11 +550,12 @@
     <type>rotate</type>
     <object-name>roueD</object-name>
     <object-name>axeD1</object-name>
+    <object-name>axeD2</object-name>
     <property>gear/gear[2]/position-norm</property>
     <interpolation>
       <entry>
         <ind>   0.0 </ind>
-	<dep> -86.4 </dep>
+	<dep> -80.0 </dep>
       </entry>
       <entry>
         <ind> 1.0 </ind>
@@ -553,7 +565,7 @@
     <center>
       <x-m> -0.840 </x-m>
       <y-m>  2.560 </y-m>
-      <z-m> -0.206 </z-m>
+      <z-m> -0.059 </z-m>
     </center>
     <axis>
       <x>  1.0 </x>
@@ -637,9 +649,9 @@
     <property>gear/gear[0]/compression-norm</property>
     <factor>45</factor>
     <center>
-      <x-m> -4.900 </x-m>
+      <x-m> -4.739 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m> -1.599 </z-m>
+      <z-m> -1.293 </z-m>
     </center>
     <axis>
       <x>  0.0 </x>
@@ -654,9 +666,9 @@
     <property>gear/gear[0]/compression-norm</property>
     <factor>40</factor>
     <center>
-      <x-m> -4.661 </x-m>
+      <x-m> -4.503 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m> -1.156 </z-m>
+      <z-m> -0.855 </z-m>
     </center>
     <axis>
       <x> 0.0 </x>
@@ -668,6 +680,7 @@
   <animation>
     <type>translate</type>
     <object-name>roueG</object-name>
+    <object-name>axeG1</object-name>
     <property>gear/gear[1]/compression-norm</property>
     <interpolation>
       <entry>
@@ -689,6 +702,7 @@
   <animation>
     <type>translate</type>
     <object-name>roueD</object-name>
+    <object-name>axeD1</object-name>
     <property>gear/gear[2]/compression-norm</property>
     <interpolation>
       <entry>
@@ -714,9 +728,9 @@
     <property>gear/gear[0]/rollspeed-ms</property>
     <factor> 30 </factor>
     <center>
-      <x-m> -5.077 </x-m>
+      <x-m> -4.897 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m> -2.047 </z-m>
+      <z-m> -1.734 </z-m>
     </center>
     <axis>
       <x>  0.000 </x>
@@ -733,7 +747,7 @@
     <center>
       <x-m> -0.840 </x-m>
       <y-m> -2.409 </y-m>
-      <z-m> -1.895 </z-m>
+      <z-m> -1.582 </z-m>
     </center>
     <axis>
       <x>  0.000 </x>
@@ -750,7 +764,7 @@
     <center>
       <x-m> -0.840 </x-m>
       <y-m>  2.409 </y-m>
-      <z-m> -1.895 </z-m>
+      <z-m> -1.582 </z-m>
     </center>
     <axis>
       <x>  0.000 </x>

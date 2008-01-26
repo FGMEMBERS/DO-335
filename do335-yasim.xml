@@ -162,7 +162,7 @@
            </piston-engine>
 </propeller>
 
-<gear x="4.841" y="0.00" z="-2.3" 
+<gear x="4.897" y="0.00" z="-1.979" 
       compression=".2" 
       retract-time="7">
       <control-input axis="/controls/flight/rudder" control="STEER"/>
@@ -172,7 +172,7 @@
       <control-output control="EXTEND" prop="/gear/gear[0]/position-norm"/>
 </gear>
 
-<gear x="0.740" y="2.409" z="-2.3" 
+<gear x="0.840" y="2.409" z="-1.983" 
       compression=".2" 
       retract-time="7">
       <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
@@ -183,7 +183,7 @@
       <control-output control="EXTEND" prop="/gear/gear[1]/position-norm"/>
 </gear>
 
-<gear x="0.740" y="-2.409" z="-2.3" 
+<gear x="0.840" y="-2.409" z="-1.983" 
       compression=".2" 
       retract-time="7">
       <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
