@@ -1,6 +1,8 @@
+<!-- Dornier Do 335 - 2008 Emmanuel BARANGER -->
+
 <airplane mass="11784">
 
-<approach speed="95" aoa="12">
+<approach speed="112" aoa="12">
   <control-setting axis="/controls/engines/engine[0]/throttle" value="0.4"/>
   <control-setting axis="/controls/engines/engine[1]/throttle" value="0.4"/>
   <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
@@ -28,36 +30,21 @@
 
 <cockpit x="2.611" y="0" z="0.756"/>
 
-<fuselage ax="6.934"
-          ay="0" 
-	  az="0.039" 
-	  bx="-6.899" 
-	  by="0" 
-	  bz="0.447"  
-	  width="1.025" 
-	  taper="0" 
-	  midpoint="0.5"/>
+<fuselage ax="6.934" ay="0" az="0.039" 
+	  bx="-6.899" by="0" bz="0.447"  
+	  width="1.025" taper="0.5" midpoint="0.5"/>
 
-<wing x="1.008" 
-      y="0.489" 
-      z="-0.233" 
-      length="5.432" 
-      chord="1.68"
-      sweep="3" 
-      dihedral="3" 
-      taper="0.8" 
+<wing x="0.894" y="0.504" z="-0.248" 
+      chord="3.732"
+      taper="0.49" 
+      length="5.460" 
+      dihedral="5" 
+      sweep="5" 
       camber="0.1">
-      <stall aoa="12" 
-             width="4" 
-	     peak="1.5"/>
-      <flap0 start="0" 
-             end=".5" 
-	     lift="1.5" 
-	     drag="1.2"/>
-      <flap1 start=".55" 
-             end=".9" 
-	     lift="1.2" 
-	     drag="1.3"/>
+      <stall aoa="18" width="4" peak="1.5"/>
+      <flap0 start="0.032" end="0.438" lift="1.5" drag="1.2"/>
+      <flap1 start="0.438" end="0.906" lift="1.2" drag="1.3"/>
+      
       <control-input axis="/controls/flight/flaps" control="FLAP0"/>
       <control-speed control="FLAP0" transition-time="5"/>
   
@@ -70,22 +57,15 @@
       <control-output control="FLAP1" side="right" prop="/surface-positions/right-aileron-pos-norm"/>
 </wing>
 
-<hstab x="-5.024" 
-       y="0.235" 
-       z="0.467" 
-       length="2.187" 
-       chord="1.24"
-       sweep="1.0" 
-       dihedral="0" 
-	incidence="1.0"
-       taper="0.6">
-       <stall aoa="15" 
-              width="14" 
-	      peak="1.5"/>
-       <flap0 start="0" 
-              end="1" 
-	      lift="1.8" 
-	      drag="1.8"/>
+<hstab x="-5.063" y="0.305" z="0.506" 
+       length="2.147" 
+       chord="1.659"
+       sweep="0.0" 
+       dihedral="1" 
+       incidence="0.0"
+       taper="0.62">
+       <stall aoa="15" width="14" peak="1.5"/>
+       <flap0 start="0" end="1" lift="1.8" drag="1.8"/>
   
        <control-input axis="/controls/flight/elevator" control="FLAP0"/>
        <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
@@ -93,20 +73,13 @@
        <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
 </hstab>
 
-<vstab x="-5.070" 
-       y="0.00" 
-       z="0.387" 
-       length="3.16" 
-       chord="1.61"
-       sweep="36" 
-       taper="0.5">
-       <stall aoa="16" 
-              width="4" 
-	      peak="1.5"/>
-       <flap0 start="0" 
-              end="1" 
-	      lift="1.3" 
-	      drag="1.2"/>
+<vstab x="-5.051" y="0.00" z="0.757" 
+       length="1.234" 
+       chord="1.749"
+       taper="0.35"
+       sweep="0">
+       <stall aoa="16" width="4" peak="1.5"/>
+       <flap0 start="0" end="1" lift="1.3" drag="1.2"/>
        
        <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
        <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
@@ -114,53 +87,23 @@
        <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"/>
 </vstab>
 
-<tank x="1.5" y="4.30" z="0.44" capacity="300"/>
-<tank x="1.0" y="1.02" z="-0.15" capacity="189"/>
-<tank x="1.5" y="-1.02" z="-0.15" capacity="189"/>
-<tank x="1.0" y="-4.30" z="0.44" capacity="300"/>
-
-<gear x="4.841" 
-      y="0.00" 
-      z="-2.3" 
-      compression=".2" 
-      retract-time="7">
-      <control-input axis="/controls/flight/rudder" control="STEER"/>
-      <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
-      <control-speed control="EXTEND" transition-time="7"/>
-      
-      <control-output control="EXTEND" prop="/gear/gear[0]/position-norm"/>
-</gear>
-
-<gear x="0.740" 
-      y="2.409" 
-      z="-2.3" 
-      compression=".2" 
-      retract-time="7">
-      <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
-      <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
-      <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
-      <control-speed control="EXTEND" transition-time="6.2"/>
-      
-      <control-output control="EXTEND" prop="/gear/gear[1]/position-norm"/>
-</gear>
-
-<gear x="0.740" 
-      y="-2.409" 
-      z="-2.3" 
-      compression=".2" 
-      retract-time="7">
-      <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
-      <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
-      <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
-      <control-speed control="EXTEND" transition-time="6"/>
-      
-      <control-output control="EXTEND" prop="/gear/gear[2]/position-norm"/>
-</gear>
+<vstab x="-5.051" y="0.00" z="0.018" 
+       length="1.234" 
+       chord="1.749"
+       taper="0.35"
+       dihedral="-90" 
+       sweep="0">
+       <stall aoa="16" width="4" peak="1.5"/>
+       <flap0 start="0" end="1" lift="1.3" drag="1.2"/>
+       
+       <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
+       <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
+       
+       <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"/>
+</vstab>
 
 <!-- Daimler Benz DB 605 E1 -->
-<propeller x="5.132" 
-           y="0" 
-	   z="0.022"
+<propeller x="5.132" y="0" z="0.022"
            mass="2035" 
 	   moment="94" 
 	   radius="1.5"
@@ -170,10 +113,9 @@
 	   cruise-alt="20000"
            gear-ratio="0.465"
            min-rpm="400" 
-	   max-rpm="2700">
-          <actionpt x="6.484" 
-	            y="0" 
-		    z="0.039"/>
+	   max-rpm="2700"
+	   contra="1">
+          <actionpt x="6.484" y="0" z="0.039"/>
           <control-input axis="/controls/engines/engine[0]/propeller-pitch" control="ADVANCE"/>
           <piston-engine eng-power="1700" 
 	                 eng-rpm="1255"
@@ -186,11 +128,9 @@
           </piston-engine>
 </propeller>
 
-<propeller x="-1.077" 
-           y="0" 
-	   z="0.336"
+<propeller x="-1.077" y="0" z="0.336"
            mass="2035" 
-	   moment="-94" 
+	   moment="94" 
 	   radius="1.5"
            cruise-power="1070"
 	   cruise-speed="187"
@@ -198,10 +138,9 @@
 	   cruise-alt="20000"
            gear-ratio="0.465"
            min-rpm="400" 
-	   max-rpm="1255">
-           <actionpt x="-6.209" 
-	             y="0" 
-		     z="0.447"/>
+	   max-rpm="1255"
+	   contra="1">
+           <actionpt x="-6.209" y="0" z="0.447"/>
            <control-input axis="/controls/engines/engine[1]/propeller-pitch" control="ADVANCE"/>
            <piston-engine eng-power="1700" 
 	                  eng-rpm="2700"
@@ -214,8 +153,44 @@
            </piston-engine>
 </propeller>
 
-<ballast x="4.61" y="0" z="0.0" mass="180"/> <!-- pilot -->
-<ballast x="5.0" y="0" z="0.0" mass="800"/>    <!-- cockpit -->
-<ballast x="-5.0" y="0" z="0.0" mass="-800"/>
+<gear x="4.841" y="0.00" z="-2.3" 
+      compression=".2" 
+      retract-time="7">
+      <control-input axis="/controls/flight/rudder" control="STEER"/>
+      <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+      <control-speed control="EXTEND" transition-time="7"/>
+      
+      <control-output control="EXTEND" prop="/gear/gear[0]/position-norm"/>
+</gear>
+
+<gear x="0.740" y="2.409" z="-2.3" 
+      compression=".2" 
+      retract-time="7">
+      <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
+      <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
+      <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+      <control-speed control="EXTEND" transition-time="6.2"/>
+      
+      <control-output control="EXTEND" prop="/gear/gear[1]/position-norm"/>
+</gear>
+
+<gear x="0.740" y="-2.409" z="-2.3" 
+      compression=".2" 
+      retract-time="7">
+      <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
+      <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
+      <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+      <control-speed control="EXTEND" transition-time="6"/>
+      
+      <control-output control="EXTEND" prop="/gear/gear[2]/position-norm"/>
+</gear>
+
+<tank x="1.5" y="4.30" z="0.44" capacity="300"/>
+<tank x="1.0" y="1.02" z="-0.15" capacity="189"/>
+<tank x="1.5" y="-1.02" z="-0.15" capacity="189"/>
+<tank x="1.0" y="-4.30" z="0.44" capacity="300"/>
+
+<!-- CG théorique x=0.894 y=0 z=-0.248 -->
+<ballast x="3.70" y="0.001" z="-8.0" mass="350"/>
 
 </airplane>

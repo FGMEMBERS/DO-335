@@ -2,89 +2,87 @@
 
 <PropertyList>
 
- <path>do335.ac</path>
- <offsets>
-   <x-m>  0.000 </x-m>
-   <y-m>  0.000 </y-m>
-   <z-m>  0.000 </z-m>
- </offsets>
+  <path>do335.ac</path>
+  <offsets>
+    <x-m>  0.000 </x-m>
+    <y-m>  0.000 </y-m>
+    <z-m>  0.000 </z-m>
+  </offsets>
  
- <animation>
-   <!-- draw these first (in no particular order) -->
-   <object-name>Cylinder.005</object-name>
-   <object-name>Cube.010</object-name>
-   <object-name>articule01</object-name>
-   <object-name>articule02</object-name>
-   <object-name>Cylinder.009</object-name>
-   <object-name>Cylinder</object-name>
-   <object-name>Cylinder.023</object-name>
-   <object-name>Cylinder.003</object-name>
-   <object-name>Cylinder.010</object-name>
-   <object-name>Pilot</object-name>
-   <object-name>Plane.004</object-name>
-   <object-name>Plane.005</object-name>
-   <object-name>Tube</object-name>
-   <object-name>Tube.001</object-name>
-   <object-name>aileronD</object-name>
-   <object-name>aileronG</object-name>
-   <object-name>gouverne</object-name>
-   <object-name>profondeur</object-name>
-   <object-name>flapD</object-name>
-   <object-name>flapG</object-name>
-   <object-name>roueA</object-name>
-   <object-name>roueG</object-name>
-   <object-name>roueD</object-name>
-   <object-name>axeA1</object-name>
-   <object-name>axeA2</object-name>
-   <object-name>axeG1</object-name>
-   <object-name>axeD1</object-name>
-   <object-name>porteG</object-name>
-   <object-name>porteD</object-name>
-   <object-name>porteG1</object-name>
-   <object-name>porteAD</object-name>
-   <object-name>porteAG</object-name>
-   <object-name>porteD1</object-name>
-   <object-name>clapet1</object-name>
-   <object-name>clapet2</object-name>
-   <object-name>clapet3</object-name>
-   <object-name>clapet4</object-name>
-   <object-name>clapet5</object-name>
-   <object-name>clapet6</object-name>
-   <object-name>clapet7</object-name>
-   <object-name>clapet8</object-name>
-   <object-name>clapet9</object-name>
-   <object-name>clapet10</object-name>
+  <animation>
+    <!-- draw these first (in no particular order) -->
+    <object-name>fuselgae</object-name>
+    <object-name>pilote</object-name>
+    <object-name>axeA1</object-name>
+    <object-name>axeA2</object-name>
+    <object-name>articule01</object-name>
+    <object-name>articule02</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>aileronG</object-name>
+    <object-name>gouverne</object-name>
+    <object-name>profondeur</object-name>
+    <object-name>flapD</object-name>
+    <object-name>flapG</object-name>
+    <object-name>roueA</object-name>
+    <object-name>roueG</object-name>
+    <object-name>roueD</object-name>
+    <object-name>axeG1</object-name>
+    <object-name>axeD1</object-name>
+    <object-name>porteG</object-name>
+    <object-name>porteD</object-name>
+    <object-name>porteG1</object-name>
+    <object-name>porteAD</object-name>
+    <object-name>porteAG</object-name>
+    <object-name>porteD1</object-name>
+    <object-name>clapet1</object-name>
+    <object-name>clapet2</object-name>
+    <object-name>clapet3</object-name>
+    <object-name>clapet4</object-name>
+    <object-name>clapet5</object-name>
+    <object-name>clapet6</object-name>
+    <object-name>clapet7</object-name>
+    <object-name>clapet8</object-name>
+    <object-name>clapet9</object-name>
+    <object-name>clapet10</object-name>
+    <object-name>echapeAV</object-name>
+    <object-name>echapeAR</object-name>
+    <object-name>sortieair</object-name>
+    <object-name>ailes</object-name>
+    <object-name>entreeAV</object-name>
+    <object-name>entreeAR</object-name>
+    <object-name>tour</object-name>
+    <object-name>interieur</object-name>
+    <object-name>derive</object-name>
+    <object-name>bolA</object-name>
+    <object-name>bolB</object-name>
+    <object-name>heliceA</object-name>
+    <object-name>heliceB</object-name>
 
-   <!-- draw this at last (order critical!) -->
-   <object-name>Cube</object-name>
-   <object-name>verriere1</object-name>
-   <object-name>verriere2</object-name>
-   <object-name>Cube.008</object-name>
-   <object-name>bolA</object-name>
-   <object-name>bolB</object-name>
-   <object-name>heliceA</object-name>
-   <object-name>heliceB</object-name>
-   <object-name>propblurA</object-name>
-   <object-name>propblurB</object-name>
-   <object-name>propdiscA</object-name>
-   <object-name>propdiscB</object-name>
- </animation>
+    <!-- draw this at last (order critical!) -->
+    <object-name>vitre</object-name>
+    <object-name>verriere1</object-name>
+    <object-name>verriere2</object-name>
+    <object-name>propblurA</object-name>
+    <object-name>propblurB</object-name>
+    <object-name>propdiscA</object-name>
+    <object-name>propdiscB</object-name>
+  </animation>
 
-<!-- Planches de bord -->
-<!-- Avant -->
- <model>
-   <path>Aircraft/DO-335/Models/Panels/panel.xml</path>
-   <offsets>
-     <x-m> -3.248 </x-m>
-     <y-m>  0.000 </y-m>
-     <z-m>  0.477 </z-m>
-   </offsets>
- </model>
+  <!-- Planches de bord -->
+  <!-- Avant -->
+  <model>
+    <path>Aircraft/DO-335/Models/Panels/panel.xml</path>
+    <offsets>
+      <x-m> -3.248 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.477 </z-m>
+    </offsets>
+  </model>
 
-<!-- Pilote invisible depuis le cockpit -->
+  <!-- Pilote invisible depuis le cockpit -->
   <animation>
     <type>select</type>
-    <object-name>pilot</object-name>
+    <object-name>pilote</object-name>
     <condition>
       <greater-than>
         <property>sim/current-view/view-number</property>
@@ -93,28 +91,16 @@
     </condition>
   </animation>
 
-<!-- Les hélices --> 
-<!-- Séléction de l'objet visible en fonction des rpm -->
+  <!-- Hélice avant --> 
   <animation>
-    <type>spin</type>
+    <name>HeliceCompleteA</name>
+    <object-name>propdiscA</object-name>
+    <object-name>propblurA</object-name>
     <object-name>heliceA</object-name>
     <object-name>bolA</object-name>
-    <object-name>propblurA</object-name>
-    <object-name>propdiscA</object-name>
-    <property>engines/engine[0]/rpm</property>
-    <factor> 1 </factor>
-    <center>
-      <x-m> -6.484 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m>  0.039 </z-m>
-    </center>
-    <axis>
-      <x> 1.000 </x>
-      <y> 0.000 </y>
-      <z> 0.000 </z>
-    </axis>
   </animation>
 
+  <!-- Séléction de l'objet visible en fonction des rpm -->
   <animation>
     <type>select</type>
     <object-name>propdiscA</object-name>
@@ -156,16 +142,13 @@
 
   <animation>
     <type>spin</type>
-    <object-name>heliceB</object-name>
-    <object-name>bolB</object-name>
-    <object-name>propblurB</object-name>
-    <object-name>propdiscB</object-name>
-    <property>engines/engine[1]/rpm</property>
-    <factor> -1 </factor>
+    <object-name>HeliceCompleteA</object-name>
+    <property>engines/engine[0]/rpm</property>
+    <factor> 1 </factor>
     <center>
-      <x-m> 6.209 </x-m>
-      <y-m> 0.000 </y-m>
-      <z-m> 0.447 </z-m>
+      <x-m> -6.484 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.039 </z-m>
     </center>
     <axis>
       <x> 1.000 </x>
@@ -173,7 +156,17 @@
       <z> 0.000 </z>
     </axis>
   </animation>
- 
+
+  <!-- Hélice arrière -->
+  <animation>
+    <name>HeliceCompleteB</name>
+    <object-name>propdiscB</object-name>
+    <object-name>propblurB</object-name>
+    <object-name>heliceB</object-name>
+    <object-name>bolB</object-name>
+  </animation>
+
+  <!-- Séléction de l'objet visible en fonction des rpm -->
   <animation>
     <type>select</type>
     <object-name>propdiscB</object-name>
@@ -213,7 +206,24 @@
     </condition>
   </animation>
 
-<!-- Gouverne de direction -->
+  <animation>
+    <type>spin</type>
+    <object-name>HeliceCompleteB</object-name>
+    <property>engines/engine[1]/rpm</property>
+    <factor> -1 </factor>
+    <center>
+      <x-m> 6.209 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.447 </z-m>
+    </center>
+    <axis>
+      <x> 1.000 </x>
+      <y> 0.000 </y>
+      <z> 0.000 </z>
+    </axis>
+  </animation>
+
+  <!-- Gouverne de direction -->
   <animation>
     <type>rotate</type>
     <object-name>gouverne</object-name>
@@ -230,7 +240,7 @@
     </axis>
   </animation>
 
-<!-- Gouverne de profondeur -->
+  <!-- Gouverne de profondeur -->
   <animation>
     <type>rotate</type>
     <object-name>profondeur</object-name>
@@ -247,22 +257,22 @@
     </axis>
   </animation>
 
-<!-- Ailerons -->
- <animation>
-   <type>rotate</type>
-   <object-name>aileronG</object-name>
-   <property>surface-positions/left-aileron-pos-norm</property>
-   <factor>18.0</factor>
-   <offset-deg>0</offset-deg>   
-   <axis>
-     <x1-m>  0.329 </x1-m>
-     <y1-m> -5.439 </y1-m>
-     <z1-m>  0.127 </z1-m>
-     <x2-m>  0.329 </x2-m>
-     <y2-m> -2.887 </y2-m>
-     <z2-m> -0.111 </z2-m>
-   </axis>
- </animation>
+  <!-- Ailerons -->
+  <animation>
+    <type>rotate</type>
+    <object-name>aileronG</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor>18.0</factor>
+    <offset-deg>0</offset-deg>   
+    <axis>
+      <x1-m>  0.329 </x1-m>
+      <y1-m> -5.439 </y1-m>
+      <z1-m>  0.127 </z1-m>
+      <x2-m>  0.329 </x2-m>
+      <y2-m> -2.887 </y2-m>
+      <z2-m> -0.111 </z2-m>
+    </axis>
+  </animation>
 
   <animation>
     <type>rotate</type>
@@ -280,7 +290,7 @@
     </axis>
   </animation>
 
-<!-- Volets -->
+  <!-- Volets -->
   <animation>
     <type>rotate</type>
     <object-name>flapG</object-name>
@@ -311,7 +321,7 @@
     </axis>
   </animation>
 
-<!-- Canopy -->
+  <!-- Canopy -->
   <animation>
     <type>translate</type>
     <object-name>verriere1</object-name>
@@ -365,21 +375,7 @@
   </animation>
 
 
-<!-- Sortie/Rentrée des trains -->
-<!--
-  <animation>
-    <type>select</type>
-    <object-name>roueA</object-name>
-    <object-name>axeA1</object-name>
-    <condition>
-      <greater-than>
-        <property>gear/gear[0]/position-norm</property>
-	<value>0</value>
-      </greater-than>
-    </condition>
-  </animation>
--->
-
+  <!-- Sortie/Rentr�e des trains -->
   <animation>
     <type>rotate</type>
     <object-name>roueA</object-name>
@@ -457,20 +453,6 @@
      <z2-m> -0.488 </z2-m>
     </axis>
   </animation>
-
-<!--
-  <animation>
-    <type>select</type>
-    <object-name>roueG</object-name>
-    <object-name>axeG1</object-name>
-    <condition>
-      <greater-than>
-        <property>gear/gear[1]/position-norm</property>
-	<value>0</value>
-      </greater-than>
-    </condition>
-  </animation>
--->
 
   <animation>
     <type>rotate</type>
@@ -553,19 +535,6 @@
     </axis>
   </animation>
 
-<!--
-  <animation>
-    <type>select</type>
-    <object-name>roueD</object-name>
-    <object-name>axeD1</object-name>
-    <condition>
-      <greater-than>
-        <property>gear/gear[2]/position-norm</property>
-	<value>0</value>
-      </greater-than>
-    </condition>
-  </animation>
--->
   <animation>
     <type>rotate</type>
     <object-name>roueD</object-name>
@@ -647,150 +616,150 @@
     </axis>
   </animation>
 
-<!-- Compression -->
- <animation>
-   <type>translate</type>
-   <object-name>roueA</object-name>
-   <object-name>axeA2</object-name>
-   <object-name>articule01</object-name>
-   <property>gear/gear[0]/compression-norm</property>
-   <factor>0.3</factor>
-   <axis>
-     <x> 0.162142 </x>
-     <y>-0.00014  </y>
-     <z> 0.294365 </z>
-   </axis>
- </animation>
+  <!-- Compression -->
+  <animation>
+    <type>translate</type>
+    <object-name>roueA</object-name>
+    <object-name>axeA2</object-name>
+    <object-name>articule01</object-name>
+    <property>gear/gear[0]/compression-norm</property>
+    <factor>0.3</factor>
+    <axis>
+      <x> 0.162142 </x>
+      <y>-0.00014  </y>
+      <z> 0.294365 </z>
+    </axis>
+  </animation>
  
- <animation>
-   <type>rotate</type>
-   <object-name>articule01</object-name>
-   <property>gear/gear[0]/compression-norm</property>
-   <factor>45</factor>
-   <center>
-     <x-m> -4.900 </x-m>
-     <y-m>  0.000 </y-m>
-     <z-m> -1.599 </z-m>
-   </center>
-   <axis>
-     <x>  0.0 </x>
-     <y> -1.0 </y>
-     <z>  0.0 </z>
-   </axis>
- </animation>
+  <animation>
+    <type>rotate</type>
+    <object-name>articule01</object-name>
+    <property>gear/gear[0]/compression-norm</property>
+    <factor>45</factor>
+    <center>
+      <x-m> -4.900 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.599 </z-m>
+    </center>
+    <axis>
+      <x>  0.0 </x>
+      <y> -1.0 </y>
+      <z>  0.0 </z>
+    </axis>
+  </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>articule02</object-name>
-   <property>gear/gear[0]/compression-norm</property>
-   <factor>40</factor>
-   <center>
-     <x-m> -4.661 </x-m>
-     <y-m>  0.000 </y-m>
-     <z-m> -1.156 </z-m>
-   </center>
-   <axis>
-     <x> 0.0 </x>
-     <y> 1.0 </y>
-     <z> 0.0 </z>
-   </axis>
- </animation>
+  <animation>
+    <type>rotate</type>
+    <object-name>articule02</object-name>
+    <property>gear/gear[0]/compression-norm</property>
+    <factor>40</factor>
+    <center>
+      <x-m> -4.661 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.156 </z-m>
+    </center>
+    <axis>
+      <x> 0.0 </x>
+      <y> 1.0 </y>
+      <z> 0.0 </z>
+    </axis>
+  </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>roueG</object-name>
-   <property>gear/gear[1]/compression-norm</property>
-   <interpolation>
-     <entry>
-       <ind> 0.0 </ind>
-       <dep> 0.0 </dep>
-     </entry>
-     <entry>
-       <ind> 1.000 </ind>
-       <dep> 0.300 </dep>
-     </entry>
-   </interpolation>
-   <axis>
-     <x> 0.000 </x>
-     <y> 0.000 </y>
-     <z> 1.000 </z>
-   </axis>
- </animation>
+  <animation>
+    <type>translate</type>
+    <object-name>roueG</object-name>
+    <property>gear/gear[1]/compression-norm</property>
+    <interpolation>
+      <entry>
+        <ind> 0.0 </ind>
+        <dep> 0.0 </dep>
+      </entry>
+      <entry>
+        <ind> 1.000 </ind>
+        <dep> 0.300 </dep>
+      </entry>
+    </interpolation>
+    <axis>
+      <x> 0.000 </x>
+      <y> 0.000 </y>
+      <z> 1.000 </z>
+    </axis>
+  </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>roueD</object-name>
-   <property>gear/gear[2]/compression-norm</property>
-   <interpolation>
-     <entry>
-       <ind> 0.0 </ind>
-       <dep> 0.0 </dep>
-     </entry>
-     <entry>
-       <ind> 1.000 </ind>
-       <dep> 0.300 </dep>
-     </entry>
-   </interpolation>
-   <axis>
-     <x> 0.000 </x>
-     <y> 0.000 </y>
-     <z> 1.000 </z>
-   </axis>
- </animation>
+  <animation>
+    <type>translate</type>
+    <object-name>roueD</object-name>
+    <property>gear/gear[2]/compression-norm</property>
+    <interpolation>
+      <entry>
+        <ind> 0.0 </ind>
+        <dep> 0.0 </dep>
+      </entry>
+      <entry>
+        <ind> 1.000 </ind>
+        <dep> 0.300 </dep>
+      </entry>
+    </interpolation>
+    <axis>
+      <x> 0.000 </x>
+      <y> 0.000 </y>
+      <z> 1.000 </z>
+    </axis>
+  </animation>
 
-<!-- Rotation des roues lors du roulage -->
+  <!-- Rotation des roues lors du roulage -->
   <animation>
     <type>spin</type>
     <object-name>roueA</object-name>
-    <property>velocities/uBody-fps</property>
-    <factor> -1.5 </factor>
+    <property>gear/gear[0]/rollspeed-ms</property>
+    <factor> 30 </factor>
     <center>
       <x-m> -5.077 </x-m>
       <y-m>  0.000 </y-m>
       <z-m> -2.047 </z-m>
     </center>
     <axis>
-      <x> 0.000 </x>
-      <y> 1.000 </y>
-      <z> 0.000 </z>
+      <x>  0.000 </x>
+      <y> -1.000 </y>
+      <z>  0.000 </z>
     </axis>
   </animation>
 
   <animation>
     <type>spin</type>
     <object-name>roueG</object-name>
-    <property>velocities/uBody-fps</property>
-    <factor> -1.5 </factor>
+    <property>gear/gear[1]/rollspeed-ms</property>
+    <factor> 30 </factor>
     <center>
       <x-m> -0.840 </x-m>
       <y-m> -2.409 </y-m>
       <z-m> -1.895 </z-m>
     </center>
     <axis>
-      <x> 0.000 </x>
-      <y> 1.000 </y>
-      <z> 0.000 </z>
+      <x>  0.000 </x>
+      <y> -1.000 </y>
+      <z>  0.000 </z>
     </axis>
   </animation>
 
   <animation>
     <type>spin</type>
     <object-name>roueD</object-name>
-    <property>velocities/uBody-fps</property>
-    <factor> -1.5 </factor>
+    <property>gear/gear[2]/rollspeed-ms</property>
+    <factor> 30 </factor>
     <center>
       <x-m> -0.840 </x-m>
       <y-m>  2.409 </y-m>
       <z-m> -1.895 </z-m>
     </center>
     <axis>
-      <x> 0.000 </x>
-      <y> 1.000 </y>
-      <z> 0.000 </z>
+      <x>  0.000 </x>
+      <y> -1.000 </y>
+      <z>  0.000 </z>
     </axis>
   </animation>
   
-<!-- Clapets du capot -->
+  <!-- Clapets du capot -->
   <animation>
     <type>rotate</type>
     <object-name>clapet1</object-name>
@@ -1072,3 +1041,4 @@
   </animation>
   
 </PropertyList>
+

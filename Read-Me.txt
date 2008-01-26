@@ -32,54 +32,54 @@ D : Open/Close valves
 
 Thanks
 ======
-Detlef FABER for new FDM
 
 ===============
 BARANGER Emmanuel
 May, 13, 2007. 
+January, 26, 2008.
 
 http://helijah.free.fr/flightgear/hangar.htm
 embaranger@free.fr
 
 
-[FranÃ§ais]
+[Français]
 ----------
 
 Un peu d'histoire
 =================
-En 1944 le reccord du monde officiel de vitesse pour un appareil Ã  piston Ã©tait dÃ©tenu par le Heinkel He-110 avec 746 Km/h.
-La mÃªme annÃ©e le Dornier Do 335 Ã©tait capable d'une vitesse maximum de 765 Km/h Ã  6500 mÃ¨tres. 
-Il pouvait monter Ã  8000 mÃ¨tres en 14,5 secondes. Ainsi il surclassait tous les chasseurs alliÃ©s qui lui Ã©taient contemporains.
+En 1944 le reccord du monde officiel de vitesse pour un appareil à  piston était détenu par le Heinkel He-110 avec 746 Km/h.
+La même année le Dornier Do 335 était capable d'une vitesse maximum de 765 Km/h Ã  6500 mètres. 
+Il pouvait monter à  8000 màtres en 14,5 secondes. Ainsi il surclassait tous les chasseurs alliés qui lui étaient contemporains.
 
 Dornier Do 335
 ==============
 
 Constructeur                  : Dornier
 Type                          : Chasseur
-AnnÃ©e                         : 1944
+Année                         : 1944
 Moteur                        : Daimler-Benz DB 605E-1 (1900 ch) x2
 Envergure                     : 13.80 m 
 Longueur                      : 13.87 m
 Hauteur                       : 4 m
-Poids estimÃ© au dÃ©collage     : 7400 kg
-Vitesse estimÃ©e de croisiÃ¨re  : 600 km/h (max 765 km/h)
-Autonomie estimÃ©e             : 1 380 km
+Poids estimé au décollage     : 7400 kg
+Vitesse estimée de croisière  : 600 km/h (max 765 km/h)
+Autonomie estimée             : 1 380 km
 Equipage                      : 1
 
 
 Quelques touches utiles :
 =========================
 
-d : Ouverture/Fermeture de la verriÃ¨re
+d : Ouverture/Fermeture de la verrière
 D : Ouverture/Fermeture des clapets
 
 Remerciements
 =============
-Detlef FABER pour le nouveau modÃ¨le de vol.
 
 ===============
 BARANGER Emmanuel
 13 Mai 2007.
+26 Janvier 2008.
 
 http://helijah.free.fr/flightgear/hangar.htm
 embaranger@free.fr

@@ -5,7 +5,7 @@
   <path>panel.ac</path>
 
   <model>
-    <path>Aircraft/DO-335/Models/Instruments/ai/ai.xml</path>
+    <path>Aircraft/DO-335/Models/Panels/Instruments/ai/ai.xml</path>
     <offsets>
       <x-m>  0.019 </x-m>
       <y-m> -0.027 </y-m>
@@ -14,7 +14,7 @@
   </model>
 
   <model>
-    <path>Aircraft/DO-335/Models/Instruments/compass/compass.xml</path>
+    <path>Aircraft/DO-335/Models/Panels/Instruments/compass/compass.xml</path>
     <offsets>
       <x-m>  0.019 </x-m>
       <y-m> -0.027 </y-m>
@@ -23,7 +23,7 @@
   </model>
 
   <model>
-    <path>Aircraft/DO-335/Models/Instruments/clock/clock.xml</path>
+    <path>Aircraft/DO-335/Models/Panels/Instruments/clock/clock.xml</path>
     <offsets>
       <x-m>  0.019 </x-m>
       <y-m> -0.226 </y-m>
