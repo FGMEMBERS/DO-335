@@ -2,20 +2,20 @@
 
 <airplane mass="11784">
 
-<approach speed="112" aoa="12">
-  <control-setting axis="/controls/engines/engine[0]/throttle" value="0.4"/>
-  <control-setting axis="/controls/engines/engine[1]/throttle" value="0.4"/>
+<approach speed="112" aoa="5">
+  <control-setting axis="/controls/engines/engine[0]/throttle" value="0.2"/>
+  <control-setting axis="/controls/engines/engine[1]/throttle" value="0.2"/>
   <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
   <control-setting axis="/controls/engines/engine[1]/mixture" value="1.0"/>
 
-  <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="0.2"/>
-  <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="0.2"/>
+  <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1.0"/>
+  <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="1.0"/>
 
   <control-setting axis="/controls/flight/flaps" value="1.0"/>
   <control-setting axis="/controls/gear/gear-down" value="1"/>
 </approach>
 
-<cruise speed="342" alt="30410">
+<cruise speed="412" alt="20000">
   <control-setting axis="/controls/engines/engine[0]/throttle" value="1.0"/>
   <control-setting axis="/controls/engines/engine[1]/throttle" value="1.0"/>
   <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
@@ -41,7 +41,7 @@
       dihedral="5" 
       sweep="5" 
       camber="0.1">
-      <stall aoa="18" width="4" peak="1.5"/>
+      <stall aoa="10" width="4" peak="1.5"/>
       <flap0 start="0.032" end="0.438" lift="1.5" drag="1.2"/>
       <flap1 start="0.438" end="0.906" lift="1.2" drag="1.3"/>
       
@@ -64,7 +64,7 @@
        dihedral="1" 
        incidence="0.0"
        taper="0.62">
-       <stall aoa="15" width="14" peak="1.5"/>
+       <stall aoa="10" width="14" peak="1.5"/>
        <flap0 start="0" end="1" lift="1.8" drag="1.8"/>
   
        <control-input axis="/controls/flight/elevator" control="FLAP0"/>
@@ -78,7 +78,7 @@
        chord="1.749"
        taper="0.35"
        sweep="0">
-       <stall aoa="16" width="4" peak="1.5"/>
+       <stall aoa="10" width="4" peak="1.5"/>
        <flap0 start="0" end="1" lift="1.3" drag="1.2"/>
        
        <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
@@ -93,7 +93,7 @@
        taper="0.35"
        dihedral="-90" 
        sweep="0">
-       <stall aoa="16" width="4" peak="1.5"/>
+       <stall aoa="10" width="4" peak="1.5"/>
        <flap0 start="0" end="1" lift="1.3" drag="1.2"/>
        
        <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
@@ -102,25 +102,29 @@
        <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"/>
 </vstab>
 
-<!-- Daimler Benz DB 605 E1 -->
-<propeller x="5.132" y="0" z="0.022"
-           mass="2035" 
+<!-- Daimler Benz DB 603 E -->
+<propeller x="4.990" y="0" z="0.0"
+           mass="2835" 
 	   moment="94" 
 	   radius="1.5"
-           cruise-power="1070" 
-	   cruise-speed="187"
-           cruise-rpm="976" 
+           cruise-power="1500" 
+	   cruise-speed="370"
+           cruise-rpm="1190" 
 	   cruise-alt="20000"
-           gear-ratio="0.465"
+		takeoff-power="1800"
+		takeoff-rpm="1400"
+           gear-ratio="0.518"
            min-rpm="400" 
-	   max-rpm="2700"
+	   max-rpm="1400"
 	   contra="1">
           <actionpt x="6.484" y="0" z="0.039"/>
           <control-input axis="/controls/engines/engine[0]/propeller-pitch" control="ADVANCE"/>
-          <piston-engine eng-power="1700" 
-	                 eng-rpm="1255"
+          <piston-engine eng-power="1800" 
+	                 eng-rpm="2700"
+				displacement="2670"
+				compression="8.3"
                          turbo-mul="2" 
-	                 wastegate-mp="40">
+	                 wastegate-mp="0.4">
                          <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
                          <control-input axis="/controls/engines/engine[0]/starter" control="STARTER"/>
                          <control-input axis="/controls/engines/engine[0]/magnetos" control="MAGNETOS"/>
@@ -128,24 +132,28 @@
           </piston-engine>
 </propeller>
 
-<propeller x="-1.077" y="0" z="0.336"
-           mass="2035" 
+<propeller x="-1.510" y="0" z="0.316"
+           mass="2835" 
 	   moment="94" 
 	   radius="1.5"
-           cruise-power="1070"
-	   cruise-speed="187"
-           cruise-rpm="976" 
+           cruise-power="1500"
+	   cruise-speed="370"
+           cruise-rpm="1190" 
 	   cruise-alt="20000"
-           gear-ratio="0.465"
+		takeoff-power="1800"
+		takeoff-rpm="1400"
+           gear-ratio="0.518"
            min-rpm="400" 
-	   max-rpm="1255"
+	   max-rpm="1400"
 	   contra="1">
            <actionpt x="-6.209" y="0" z="0.447"/>
            <control-input axis="/controls/engines/engine[1]/propeller-pitch" control="ADVANCE"/>
-           <piston-engine eng-power="1700" 
+           <piston-engine eng-power="1800" 
 	                  eng-rpm="2700"
+				displacement="2670"
+				compression="8.3"
                           turbo-mul="2" 
-	                  wastegate-mp="40">
+	                  wastegate-mp="0.4">
                           <control-input axis="/controls/engines/engine[1]/throttle" control="THROTTLE"/>
                           <control-input axis="/controls/engines/engine[1]/starter" control="STARTER"/>
                           <control-input axis="/controls/engines/engine[1]/magnetos" control="MAGNETOS"/>
@@ -191,6 +199,6 @@
 <tank x="1.0" y="-4.30" z="0.44" capacity="300"/>
 
 <!-- CG théorique x=0.894 y=0 z=-0.248 -->
-<ballast x="3.70" y="0.001" z="-8.0" mass="350"/>
+<ballast x="0.32" y="0.001" z="-8.0" mass="350"/>
 
 </airplane>

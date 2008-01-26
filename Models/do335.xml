@@ -462,7 +462,7 @@
     <interpolation>
       <entry>
         <ind>  0.0 </ind>
-	<dep> 86.6 </dep>
+	<dep> 86.4 </dep>
       </entry>
       <entry>
         <ind> 1.0 </ind>
@@ -543,7 +543,7 @@
     <interpolation>
       <entry>
         <ind>   0.0 </ind>
-	<dep> -86.6 </dep>
+	<dep> -86.4 </dep>
       </entry>
       <entry>
         <ind> 1.0 </ind>
