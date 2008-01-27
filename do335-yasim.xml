@@ -104,57 +104,61 @@
 </vstab>
 
 <!-- Daimler Benz DB 603 E -->
-<propeller x="4.990" y="0" z="0.0"
+<propeller x="4.990" y="0" z="0.049"
            mass="2835" 
 	   moment="94" 
 	   radius="1.5"
-           cruise-power="1500" 
+           cruise-power="1325" 
 	   cruise-speed="370"
            cruise-rpm="1190" 
 	   cruise-alt="20000"
-		takeoff-power="1800"
-		takeoff-rpm="1400"
+	   takeoff-power="1800"
+	   takeoff-rpm="1400"
+	   fine-stop="1"
+	   coarse-stop="3.5"
            gear-ratio="0.518"
-           min-rpm="400" 
+           min-rpm="200" 
 	   max-rpm="1400"
 	   contra="1">
-          <actionpt x="6.484" y="0" z="0.039"/>
-          <control-input axis="/controls/engines/engine[0]/propeller-pitch" control="ADVANCE"/>
-          <piston-engine eng-power="1800" 
+           <actionpt x="6.484" y="0" z="0.039"/>
+           <control-input axis="/controls/engines/engine[0]/propeller-pitch" control="ADVANCE"/>
+           <piston-engine eng-power="1800" 
 	                 eng-rpm="2700"
-				displacement="2670"
-				compression="8.3"
-                         turbo-mul="2" 
-	                 wastegate-mp="0.4">
+			 displacement="2715"
+			 compression="8.3"
+                         turbo-mul="2"  
+	                 wastegate-mp="40"> 
                          <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
                          <control-input axis="/controls/engines/engine[0]/starter" control="STARTER"/>
                          <control-input axis="/controls/engines/engine[0]/magnetos" control="MAGNETOS"/>
                          <control-input axis="/controls/engines/engine[0]/mixture" control="MIXTURE"/>
-          </piston-engine>
+           </piston-engine>
 </propeller>
 
-<propeller x="-1.510" y="0" z="0.316"
+<propeller x="-1.510" y="0" z="0.049"
            mass="2835" 
 	   moment="94" 
 	   radius="1.5"
-           cruise-power="1500"
+           cruise-power="1325"
 	   cruise-speed="370"
            cruise-rpm="1190" 
 	   cruise-alt="20000"
-		takeoff-power="1800"
-		takeoff-rpm="1400"
+	   takeoff-power="1800"
+	   takeoff-rpm="1400"
+	   fine-stop="1"
+	   coarse-stop="3.5"
            gear-ratio="0.518"
-           min-rpm="400" 
+           min-rpm="200" 
 	   max-rpm="1400"
 	   contra="1">
            <actionpt x="-6.209" y="0" z="0.447"/>
            <control-input axis="/controls/engines/engine[1]/propeller-pitch" control="ADVANCE"/>
            <piston-engine eng-power="1800" 
 	                  eng-rpm="2700"
-				displacement="2670"
-				compression="8.3"
+			  displacement="2715"
+			  compression="8.3"
                           turbo-mul="2" 
-	                  wastegate-mp="0.4">
+	                  wastegate-mp="40">
                           <control-input axis="/controls/engines/engine[1]/throttle" control="THROTTLE"/>
                           <control-input axis="/controls/engines/engine[1]/starter" control="STARTER"/>
                           <control-input axis="/controls/engines/engine[1]/magnetos" control="MAGNETOS"/>
@@ -196,10 +200,10 @@
 
 <tank x="1.5" y="4.30" z="0.44" capacity="300"/>
 <tank x="1.0" y="1.02" z="-0.15" capacity="189"/>
-<tank x="1.5" y="-1.02" z="-0.15" capacity="189"/>
-<tank x="1.0" y="-4.30" z="0.44" capacity="300"/>
+<tank x="1.0" y="-1.02" z="-0.15" capacity="189"/>
+<tank x="1.5" y="-4.30" z="0.44" capacity="300"/>
 
 <!-- CG théorique x=0.894 y=0 z=-0.248 -->
-<ballast x="0.32" y="0.001" z="-8.0" mass="350"/>
+<ballast x="0.30" y="0.0" z="-8.0" mass="350"/>
 
 </airplane>
