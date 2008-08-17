@@ -3,16 +3,19 @@
 <PropertyList>
 
   <path>do335.ac</path>
-  <offsets>
-    <x-m>  0.000 </x-m>
-    <y-m>  0.000 </y-m>
-    <z-m>  0.000 </z-m>
-  </offsets>
- 
+
+  <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/DO-335/Models/Liveries", 10);
+    </load>
+    <unload>
+      livery_update.stop();
+    </unload>
+  </nasal>
+
   <animation>
     <!-- draw these first (in no particular order) -->
-    <object-name>fuselgae</object-name>
-    <object-name>pilote</object-name>
+    <object-name>fuselage</object-name>
     <object-name>axeA1</object-name>
     <object-name>axeA2</object-name>
     <object-name>articule01</object-name>
@@ -53,7 +56,6 @@
     <object-name>entreeAV</object-name>
     <object-name>entreeAR</object-name>
     <object-name>tour</object-name>
-    <object-name>interieur</object-name>
     <object-name>derive</object-name>
     <object-name>bolA</object-name>
     <object-name>bolB</object-name>
@@ -70,28 +72,109 @@
     <object-name>propdiscB</object-name>
   </animation>
 
-  <!-- Planches de bord -->
-  <!-- Avant -->
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+    <object-name>verriere1</object-name>
+    <object-name>verriere2</object-name>
+    <object-name>propblurA</object-name>
+    <object-name>propblurB</object-name>
+    <object-name>propdiscA</object-name>
+    <object-name>propdiscB</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>fuselage</object-name>
+    <object-name>axeA1</object-name>
+    <object-name>axeA2</object-name>
+    <object-name>articule01</object-name>
+    <object-name>articule02</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>aileronG</object-name>
+    <object-name>gouverne</object-name>
+    <object-name>profondeur</object-name>
+    <object-name>flapD</object-name>
+    <object-name>flapG</object-name>
+    <object-name>roueA</object-name>
+    <object-name>roueG</object-name>
+    <object-name>roueD</object-name>
+    <object-name>axeG1</object-name>
+    <object-name>axeG2</object-name>
+    <object-name>axeD1</object-name>
+    <object-name>axeD2</object-name>
+    <object-name>porteG</object-name>
+    <object-name>porteD</object-name>
+    <object-name>porteG1</object-name>
+    <object-name>porteAD</object-name>
+    <object-name>porteAG</object-name>
+    <object-name>porteD1</object-name>
+    <object-name>clapet1</object-name>
+    <object-name>clapet2</object-name>
+    <object-name>clapet3</object-name>
+    <object-name>clapet4</object-name>
+    <object-name>clapet5</object-name>
+    <object-name>clapet6</object-name>
+    <object-name>clapet7</object-name>
+    <object-name>clapet8</object-name>
+    <object-name>clapet9</object-name>
+    <object-name>clapet10</object-name>
+    <object-name>echapeAV</object-name>
+    <object-name>echapeAR</object-name>
+    <object-name>sortieair</object-name>
+    <object-name>ailes</object-name>
+    <object-name>entreeAV</object-name>
+    <object-name>entreeAR</object-name>
+    <object-name>tour</object-name>
+    <object-name>derive</object-name>
+    <object-name>bolA</object-name>
+    <object-name>bolB</object-name>
+    <object-name>heliceA</object-name>
+    <object-name>heliceB</object-name>
+
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
+<!--
+    <diffuse>
+      <red-prop>diffuse/red</red-prop>
+      <green-prop>diffuse/green</green-prop>
+      <blue-prop>diffuse/blue</blue-prop>
+    </diffuse>
+
+    <ambient>
+      <red-prop>ambient/red</red-prop>
+      <green-prop>ambient/green</green-prop>
+      <blue-prop>ambient/blue</blue-prop>
+    </ambient>
+-->
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+
+    <emission>
+      <red-prop>emission/red</red-prop>
+      <green-prop>emission/green</green-prop>
+      <blue-prop>emission/blue</blue-prop>
+    </emission>
+<!--
+    <shininess>
+      <shininess-prop>shininess</shininess-prop>
+    </shininess>
+-->
+  </animation>
+
+  <!-- Interior -->
   <model>
-    <path>Aircraft/DO-335/Models/Panels/panel.xml</path>
+    <path>Aircraft/DO-335/Models/Interior/interior.xml</path>
     <offsets>
-      <x-m> -3.248 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m>  0.477 </z-m>
+      <x-m> 0.0 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> 0.0 </z-m>
     </offsets>
   </model>
-
-  <!-- Pilote invisible depuis le cockpit -->
-  <animation>
-    <type>select</type>
-    <object-name>pilote</object-name>
-    <condition>
-      <greater-than>
-        <property>sim/current-view/view-number</property>
-        <value>0</value>
-      </greater-than>
-    </condition>
-  </animation>
 
   <!-- Hélice avant --> 
   <animation>

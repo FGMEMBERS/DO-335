@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
-<!-- <PropertyList include="do335-jsbsim-set.xml"> -->
-<PropertyList include="do335-yasim-set.xml">
+<!-- <PropertyList include="do335-jsbsim-cnf.xml"> -->
+<PropertyList include="do335-yasim-cnf.xml">
 
   <sim>
     <description>Dornier Do 335</description>
