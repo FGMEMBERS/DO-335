@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -7,17 +7,34 @@
   <animation>
     <!-- Objets opaques -->
     <object-name>interieur</object-name>
+    <object-name>inttour</object-name>
 
     <!-- Objets transparents -->
+    <object-name>intvitres</object-name>
+    <object-name>intverriere2</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>intvitres</object-name>
+    <object-name>intverriere2</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>shader.png</texture>
+    <object-name>intvitres</object-name>
+    <object-name>intverriere2</object-name>
   </animation>
 
   <!-- Pilote -->
   <model>
     <path>Aircraft/DO-335/Models/Pilot/pilot.xml</path>
     <offsets>
-      <x-m> -2.863 </x-m>
+      <x-m> -2.746 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m>  0.303 </z-m>
+      <z-m>  0.514 </z-m>
     </offsets>
   </model>
 
@@ -27,9 +44,41 @@
     <offsets>
       <x-m> -3.248 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m>  0.477 </z-m>
+      <z-m>  0.624 </z-m>
     </offsets>
   </model>
+
+  <animation>
+    <type>translate</type>
+    <object-name>intverriere2</object-name>
+    <property>/instrumentation/doors/crew/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep> 0.00 </dep></entry>
+      <entry><ind> 0.20 </ind><dep> 0.19 </dep></entry>
+      <entry><ind> 1.00 </ind><dep> 0.19 </dep></entry>
+    </interpolation>
+    <axis>
+      <x>  0.000 </x>
+      <y>  0.000 </y>
+      <z>  1.000 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>intverriere2</object-name>
+    <property>/instrumentation/doors/crew/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep> 0.00 </dep></entry>
+      <entry><ind> 0.20 </ind><dep> 0.00 </dep></entry>
+      <entry><ind> 1.00 </ind><dep> 0.70 </dep></entry>
+    </interpolation>
+    <axis>
+      <x>  1.000 </x>
+      <y>  0.000 </y>
+      <z>  0.000 </z>
+    </axis>
+  </animation>
 
 </PropertyList>
 

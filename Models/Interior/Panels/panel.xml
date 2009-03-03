@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -51,9 +51,9 @@
   <model>
     <path>Aircraft/DO-335/Models/Interior/Panels/Instruments/clock/clock.xml</path>
     <offsets>
-      <x-m>  0.019 </x-m>
-      <y-m> -0.226 </y-m>
-      <z-m>  0.122 </z-m>
+      <x-m>  0.014 </x-m>
+      <y-m> -0.259 </y-m>
+      <z-m>  0.137 </z-m>
     </offsets>
   </model>
  

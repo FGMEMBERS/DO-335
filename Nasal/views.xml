@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -15,19 +15,19 @@
       <default-field-of-view-deg type="double">30</default-field-of-view-deg>
       <pitch-offset-deg>-5</pitch-offset-deg>
       <x-offset-m archive="y"> 0.000 </x-offset-m> <!--Right-->
-      <y-offset-m archive="y"> 1.066 </y-offset-m> <!--Up-->
-      <z-offset-m archive="y"> 2.700 </z-offset-m> <!--Back-->
+      <y-offset-m archive="y"> 2.497 </y-offset-m> <!--Up-->
+      <z-offset-m archive="y"> 5.218 </z-offset-m> <!--Back-->
     </config>
   </view>
 
   <view n="0">
     <internal archive="y">true</internal>
     <config>
-      <x-offset-m archive="y"> 0.000 </x-offset-m>  <!-- Right -->
-      <y-offset-m archive="y"> 0.720 </y-offset-m>  <!-- Up    -->
-      <z-offset-m archive="y">-2.707 </z-offset-m>  <!-- Back  -->
+      <x-offset-m archive="y">  0.000 </x-offset-m>  <!-- Right -->
+      <y-offset-m archive="y">  0.937 </y-offset-m>  <!-- Up    -->
+      <z-offset-m archive="y"> -2.587 </z-offset-m>  <!-- Back  -->
       <pitch-offset-deg>-10.0</pitch-offset-deg>
-      <default-field-of-view-deg>55</default-field-of-view-deg>
+      <default-field-of-view-deg>60</default-field-of-view-deg>
     </config>
   </view>
 
