@@ -1,12 +1,12 @@
 AC3Db
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
-MATERIAL "DefaultWhite.003" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
+MATERIAL "DefaultWhite" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
 OBJECT world
 kids 5
 OBJECT poly
 name "panel1"
-data 10
-panel1.001
+data 6
+panel1
 texture "colors.png"
 texrep 1 1
 crease 30.000000
@@ -1022,8 +1022,8 @@ refs 3
 kids 0
 OBJECT poly
 name "panel2"
-data 10
-panel2.001
+data 6
+panel2
 texture "colors.png"
 texrep 1 1
 crease 30.000000
@@ -1178,8 +1178,8 @@ refs 4
 kids 0
 OBJECT poly
 name "panel3"
-data 10
-panel3.001
+data 6
+panel3
 texture "colors.png"
 texrep 1 1
 crease 30.000000
@@ -1925,8 +1925,8 @@ refs 3
 kids 0
 OBJECT poly
 name "panel4"
-data 10
-panel4.001
+data 6
+panel4
 texture "colors.png"
 texrep 1 1
 crease 30.000000
@@ -2672,8 +2672,8 @@ refs 3
 kids 0
 OBJECT poly
 name "panel5"
-data 10
-panel5.001
+data 6
+panel5
 texture "colors.png"
 texrep 1 1
 crease 30.000000

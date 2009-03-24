@@ -61,6 +61,7 @@
     <object-name>bolB</object-name>
     <object-name>heliceA</object-name>
     <object-name>heliceB</object-name>
+    <object-name>trous</object-name>
 
     <!-- draw this at last (order critical!) -->
     <object-name>vitres</object-name>
@@ -137,6 +138,7 @@
     <object-name>bolB</object-name>
     <object-name>heliceA</object-name>
     <object-name>heliceB</object-name>
+    <object-name>trous</object-name>
 
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
@@ -701,6 +703,33 @@
       <x> 0.000 </x>
       <y> 0.000 </y>
       <z> 1.000 </z>
+    </axis>
+  </animation>
+
+  <!-- Rotation de la roue avant en fonction de la gouverne de direction -->
+  <animation>
+    <object-name>TrainAvant</object-name>
+    <object-name>roueA</object-name>
+    <object-name>axeA1</object-name>
+    <object-name>axeA2</object-name>
+    <object-name>articule01</object-name>
+    <object-name>articule02</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>TrainAvant</object-name>
+    <property>controls/flight/rudder</property>
+    <factor> -40.0 </factor>
+    <center>
+      <x-m> -4.589829 </x-m>
+      <y-m> -0.000256 </y-m>
+      <z-m> -1.424884 </z-m>
+    </center>
+    <axis>
+      <x>  0.310410 </x>
+      <y> -0.000352 </y>
+      <z>  0.690488 </z>
     </axis>
   </animation>
 
