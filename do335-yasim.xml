@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- Dornier Do 335 - 2008 Emmanuel BARANGER
-                           Pierre GEOFFROY
+<!-- Dornier Do 335 - 2008 Emmanuel BARANGER 2010
 
-     Wingspan            : 13.80 m ( 45 ft 1 in )
-     Length              : 13.85 m ( 45 ft 5 in )
-     Height              :  5.00 m ( 16 ft )
+     sources             : http://en.wikipedia.org/wiki/Dornier_Do_335
+
+     Wingspan            : 13.80 m  ( 45 ft 1 in )
+     Length              : 13.85 m  ( 45 ft 5 in )
+     Height              :  5.00 m  ( 16 ft )
+     Empty weight        :  5210 kg ( 11484 lb)
      Engines             : 2 x DB 603E-1 ( 2 x 1800 ch )
-     Empty mass          : 5210 kg ( 11484 lb )
 -->
 
 <airplane mass="11484">
@@ -36,18 +37,18 @@
 
   <cockpit x="2.611" y="0" z="0.756"/>
 
-  <fuselage ax="6.934" ay="0" az="0.039" bx="-6.899" by="0" bz="0.447"  width="1.025" taper="0.5" midpoint="0.5"/>
+  <fuselage ax="6.377" ay="0" az="0.084" bx="-6.008" by="0" bz="0.584"  width="1.2" taper="0.5" midpoint="0.3"/>
 
   <wing x="0.894" y="0.504" z="-0.248" 
         chord="3.732"
+        length="6.4" 
         taper="0.49" 
-        length="5.460" 
         dihedral="5" 
-        sweep="5" 
-        camber="0.1">
+        sweep="6" 
+        camber="0.01">
         <stall aoa="10" width="4" peak="1.5"/>
-        <flap0 start="0.032" end="0.438" lift="1.5" drag="1.2"/>
-        <flap1 start="0.438" end="0.906" lift="1.2" drag="1.3"/>
+        <flap0 start="0.036" end="0.446" lift="1.5" drag="1.2"/>
+        <flap1 start="0.446" end="0.914" lift="1.2" drag="1.3"/>
         <control-input axis="/controls/flight/flaps" control="FLAP0"/>
         <control-input axis="/controls/flight/aileron" control="FLAP1" split="true"/>
         <control-input axis="/controls/flight/aileron-trim" control="FLAP1" split="true"/>
@@ -59,12 +60,11 @@
         <control-speed control="FLAP0" transition-time="5"/>
   </wing>
 
-  <hstab x="-5.063" y="0.305" z="0.506" 
-         length="2.147" 
+  <hstab x="-5.063" y="0.305" z="0.644" 
          chord="1.659"
-         sweep="0.0" 
+         length="2.55" 
+         sweep="2" 
          dihedral="1" 
-         incidence="0.0"
          taper="0.62">
          <stall aoa="10" width="14" peak="1.5"/>
          <flap0 start="0" end="1" lift="1.8" drag="1.8"/>
@@ -75,37 +75,45 @@
   </hstab>
 
   <vstab x="-5.051" y="0.00" z="0.757" 
-         length="1.234" 
          chord="1.749"
+         length="1.7" 
          taper="0.35"
-         sweep="0">
+         sweep="10">
          <stall aoa="10" width="4" peak="1.5"/>
-         <flap0 start="0" end="1" lift="1.3" drag="1.2"/>
+         <flap0 start="0.1" end="0.85" lift="1.3" drag="1.2"/>
          <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
          <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
 
          <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"/>
   </vstab>
 
-  <vstab x="-5.051" y="0.00" z="0.018" 
-         length="1.234" 
+  <vstab x="-5.051" y="0.00" z="0.260" 
          chord="1.749"
+         length="1.7" 
          taper="0.35"
          dihedral="-90" 
-         sweep="0">
+         sweep="10">
          <stall aoa="10" width="4" peak="1.5"/>
-         <flap0 start="0" end="1" lift="1.3" drag="1.2"/>
+         <flap0 start="0.2" end="0.8" lift="1.3" drag="1.2"/>
          <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
          <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
 
          <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"/>
   </vstab>
 
-  <!-- Daimler Benz DB 603 E -->
+  <!-- Engines   source            : http://en.wikipedia.org/wiki/Daimler-Benz_DB_603
+
+                 name              : Daimler-Benz DB 603
+                 type              : 12-cylinder liquid-cooled supercharged inverted Vee aircraft piston engine
+                 power cruise      : 848 hp at 2400 rpm at 13,100 ft
+                 weight            :    465 kg  (1025 lb)
+                 displacement      : 2716.9 in3 (44.52 l)
+                 compression       : 7.5:1
+  -->
   <propeller x="4.990" y="0" z="0.049"
              mass="2835"  
              moment="94" 
-             radius="1.5"
+             radius="1.83"
              cruise-power="1325" 
              cruise-speed="370"
              cruise-rpm="1190" 
@@ -118,12 +126,12 @@
              min-rpm="200" 
              max-rpm="1400"
              contra="1">
-             <actionpt x="6.640" y="0" z="0.084"/>
+             <actionpt x="6.489" y="0" z="0.084"/>
              <control-input axis="/controls/engines/engine[0]/propeller-pitch" control="ADVANCE"/>
              <piston-engine eng-power="1800" 
                            eng-rpm="2700"
-                           displacement="2715"
-                           compression="8.3"
+                           displacement="2716.9"
+                           compression="7.5"
                            turbo-mul="2"
                            wastegate-mp="40"> 
                            <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
@@ -136,7 +144,7 @@
   <propeller x="-1.510" y="0" z="0.049"
              mass="2835"  
              moment="94" 
-             radius="1.5"
+             radius="1.83"
              cruise-power="1325" 
              cruise-speed="370"
              cruise-rpm="1190" 
@@ -149,12 +157,12 @@
              min-rpm="200" 
              max-rpm="1400"
              contra="1">
-             <actionpt x="-6.454" y="0" z="0.584"/>
+             <actionpt x="-6.207" y="0" z="0.584"/>
              <control-input axis="/controls/engines/engine[1]/propeller-pitch" control="ADVANCE"/>
              <piston-engine eng-power="1800" 
                             eng-rpm="2700"
-                            displacement="2715"
-                            compression="8.3"
+                            displacement="2716.9"
+                            compression="7.5"
                             turbo-mul="2"
                             wastegate-mp="40"> 
                             <control-input axis="/controls/engines/engine[1]/throttle" control="THROTTLE"/>
@@ -196,12 +204,12 @@
         <control-output control="EXTEND" prop="/gear/gear[2]/position-norm"/>
   </gear>
 
-  <tank x="1.5" y="4.30" z="0.44" capacity="300"/>
+  <tank x="1.0" y="4.30" z="0.046" capacity="300"/>
   <tank x="1.0" y="1.02" z="-0.15" capacity="189"/>
   <tank x="1.0" y="-1.02" z="-0.15" capacity="189"/>
-  <tank x="1.5" y="-4.30" z="0.44" capacity="300"/>
+  <tank x="1.0" y="-4.30" z="0.046" capacity="300"/>
 
-  <!-- CG théorique x=0.894 y=0 z=-0.248 -->
-  <ballast x="0.30" y="0.0" z="-8.0" mass="350"/>
+  <!-- CG theorique x=0.894 y=0 z=-0.248 -->
+  <ballast x="1" y="0.0" z="-8.0" mass="350"/>
 
 </airplane>
