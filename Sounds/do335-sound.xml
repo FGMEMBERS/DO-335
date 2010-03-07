@@ -334,6 +334,20 @@
       <max-dist>1000</max-dist>
     </stall>
  
+    <guns> 
+      <name>gunfire</name>
+      <mode>looped</mode>
+      <path>Aircraft/DO-335/Sounds/gunfire_1.wav</path>
+      <condition> 
+        <property>controls/armament/trigger</property>
+        <property>ai/submodels/submodel/count</property>
+      </condition>
+      <volume> 
+        <factor>1.2</factor>
+        <max>1.0</max>
+      </volume>
+    </guns>
+
   </fx>
  
 </PropertyList>

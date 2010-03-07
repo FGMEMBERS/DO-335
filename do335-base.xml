@@ -21,6 +21,11 @@
       </livery>
     </model>
 
+    <submodels> 
+      <serviceable type="bool">true</serviceable>
+      <path>Aircraft/DO-335/Models/Effects/submodels.xml</path>
+    </submodels>
+
     <startup>
       <splash-texture>Aircraft/DO-335/do335-splash.png</splash-texture>
     </startup>
@@ -49,6 +54,10 @@
       <key>
         <name>D</name>
         <desc>Open/Close valves</desc>
+      </key>
+      <key>
+        <name>e</name>
+        <desc>Guns fire</desc>
       </key>
     </help>
 
@@ -86,6 +95,9 @@
       <file>Aircraft/DO-335/Nasal/liveries.nas</file>
       <file>Aircraft/DO-335/Nasal/light.nas</file>
     </do335>
+    <guns>
+      <file>Aircraft/DO-335/Nasal/weapons.nas</file>
+    </guns>
   </nasal>
 
 </PropertyList>
