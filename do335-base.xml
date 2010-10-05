@@ -23,15 +23,12 @@
 
     <submodels> 
       <serviceable type="bool">true</serviceable>
-      <path>Aircraft/DO-335/Models/Effects/submodels.xml</path>
+      <path>Aircraft/DO-335/Models/Effects/guns/submodels.xml</path>
     </submodels>
 
     <startup>
       <splash-texture>Aircraft/DO-335/do335-splash.png</splash-texture>
     </startup>
-
-    <virtual-cockpit archive="y">true</virtual-cockpit>
-    <allow-toggle-cockpit archive="y">true</allow-toggle-cockpit>
 
     <multiplay>
       <chat_display>1</chat_display>
@@ -42,6 +39,8 @@
         <int type="int">0</int>
         <int type="int">0</int>
         <int type="int">0</int>
+        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
+        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
       </generic>
     </multiplay>
 
@@ -90,8 +89,10 @@
   </input>
 
   <nasal>
-    <do335>
+    <doors>
       <file>Aircraft/DO-335/Nasal/doors.nas</file>
+    </doors>
+    <do335>
       <file>Aircraft/DO-335/Nasal/liveries.nas</file>
       <file>Aircraft/DO-335/Nasal/light.nas</file>
     </do335>

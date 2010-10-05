@@ -16,23 +16,12 @@
   <animation>
     <!-- draw these first (in no particular order) -->
     <object-name>fuselage</object-name>
-    <object-name>axeA1</object-name>
-    <object-name>axeA2</object-name>
-    <object-name>articule01</object-name>
-    <object-name>articule02</object-name>
     <object-name>aileronD</object-name>
     <object-name>aileronG</object-name>
     <object-name>gouverne</object-name>
     <object-name>profondeur</object-name>
     <object-name>flapD</object-name>
     <object-name>flapG</object-name>
-    <object-name>roueA</object-name>
-    <object-name>roueG</object-name>
-    <object-name>roueD</object-name>
-    <object-name>axeG1</object-name>
-    <object-name>axeG2</object-name>
-    <object-name>axeD1</object-name>
-    <object-name>axeD2</object-name>
     <object-name>porteG</object-name>
     <object-name>porteD</object-name>
     <object-name>porteG1</object-name>
@@ -49,8 +38,6 @@
     <object-name>clapet8</object-name>
     <object-name>clapet9</object-name>
     <object-name>clapet10</object-name>
-    <object-name>echapeAV</object-name>
-    <object-name>echapeAR</object-name>
     <object-name>sortieair</object-name>
     <object-name>ailes</object-name>
     <object-name>entreeAV</object-name>
@@ -59,8 +46,24 @@
     <object-name>derive</object-name>
     <object-name>bolA</object-name>
     <object-name>bolB</object-name>
+    <object-name>cacheguns</object-name>
+
+    <object-name>guns</object-name>
     <object-name>heliceA</object-name>
     <object-name>heliceB</object-name>
+    <object-name>echapeAV</object-name>
+    <object-name>echapeAR</object-name>
+    <object-name>axeA1</object-name>
+    <object-name>axeA2</object-name>
+    <object-name>articule01</object-name>
+    <object-name>articule02</object-name>
+    <object-name>roueA</object-name>
+    <object-name>roueG</object-name>
+    <object-name>roueD</object-name>
+    <object-name>axeG1</object-name>
+    <object-name>axeG2</object-name>
+    <object-name>axeD1</object-name>
+    <object-name>axeD2</object-name>
     <object-name>trous</object-name>
 
     <!-- draw this at last (order critical!) -->
@@ -73,43 +76,14 @@
   </animation>
 
   <animation>
-    <type>noshadow</type>
-    <object-name>vitres</object-name>
-    <object-name>verriere2</object-name>
-    <object-name>propblurA</object-name>
-    <object-name>propblurB</object-name>
-    <object-name>propdiscA</object-name>
-    <object-name>propdiscB</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>glass_shader.png</texture>
-    <object-name>vitres</object-name>
-    <object-name>verriere2</object-name>
-  </animation>
-
-  <animation>
     <type>material</type>
     <object-name>fuselage</object-name>
-    <object-name>axeA1</object-name>
-    <object-name>axeA2</object-name>
-    <object-name>articule01</object-name>
-    <object-name>articule02</object-name>
     <object-name>aileronD</object-name>
     <object-name>aileronG</object-name>
     <object-name>gouverne</object-name>
     <object-name>profondeur</object-name>
     <object-name>flapD</object-name>
     <object-name>flapG</object-name>
-    <object-name>roueA</object-name>
-    <object-name>roueG</object-name>
-    <object-name>roueD</object-name>
-    <object-name>axeG1</object-name>
-    <object-name>axeG2</object-name>
-    <object-name>axeD1</object-name>
-    <object-name>axeD2</object-name>
     <object-name>porteG</object-name>
     <object-name>porteD</object-name>
     <object-name>porteG1</object-name>
@@ -126,8 +100,6 @@
     <object-name>clapet8</object-name>
     <object-name>clapet9</object-name>
     <object-name>clapet10</object-name>
-    <object-name>echapeAV</object-name>
-    <object-name>echapeAR</object-name>
     <object-name>sortieair</object-name>
     <object-name>ailes</object-name>
     <object-name>entreeAV</object-name>
@@ -136,8 +108,24 @@
     <object-name>derive</object-name>
     <object-name>bolA</object-name>
     <object-name>bolB</object-name>
+    <object-name>cacheguns</object-name>
+
+    <object-name>guns</object-name>
     <object-name>heliceA</object-name>
     <object-name>heliceB</object-name>
+    <object-name>echapeAV</object-name>
+    <object-name>echapeAR</object-name>
+    <object-name>axeA1</object-name>
+    <object-name>axeA2</object-name>
+    <object-name>articule01</object-name>
+    <object-name>articule02</object-name>
+    <object-name>roueA</object-name>
+    <object-name>roueG</object-name>
+    <object-name>roueD</object-name>
+    <object-name>axeG1</object-name>
+    <object-name>axeG2</object-name>
+    <object-name>axeD1</object-name>
+    <object-name>axeD2</object-name>
     <object-name>trous</object-name>
 
     <property-base>sim/model/livery</property-base>
@@ -174,22 +162,65 @@
 -->
   </animation>
 
+  <effect>
+    <inherits-from>Aircraft/DO-335/Models/Effects/BumpMap/bumpmap</inherits-from>
+    <object-name>fuselage</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>aileronG</object-name>
+    <object-name>gouverne</object-name>
+    <object-name>profondeur</object-name>
+    <object-name>flapD</object-name>
+    <object-name>flapG</object-name>
+    <object-name>porteG</object-name>
+    <object-name>porteD</object-name>
+    <object-name>porteG1</object-name>
+    <object-name>porteAD</object-name>
+    <object-name>porteAG</object-name>
+    <object-name>porteD1</object-name>
+    <object-name>clapet1</object-name>
+    <object-name>clapet2</object-name>
+    <object-name>clapet3</object-name>
+    <object-name>clapet4</object-name>
+    <object-name>clapet5</object-name>
+    <object-name>clapet6</object-name>
+    <object-name>clapet7</object-name>
+    <object-name>clapet8</object-name>
+    <object-name>clapet9</object-name>
+    <object-name>clapet10</object-name>
+    <object-name>sortieair</object-name>
+    <object-name>ailes</object-name>
+    <object-name>entreeAV</object-name>
+    <object-name>entreeAR</object-name>
+    <object-name>tour</object-name>
+    <object-name>derive</object-name>
+    <object-name>bolA</object-name>
+    <object-name>bolB</object-name>
+    <object-name>cacheguns</object-name>
+  </effect>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitres</object-name>
+    <object-name>verriere2</object-name>
+    <object-name>propblurA</object-name>
+    <object-name>propblurB</object-name>
+    <object-name>propdiscA</object-name>
+    <object-name>propdiscB</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>vitres</object-name>
+    <object-name>verriere2</object-name>
+  </animation>
+
   <!-- Une ombre pour OSG -->
   <model>
     <name>shadowOSG</name>
     <path>Aircraft/DO-335/Models/shadow.xml</path>
   </model>
-
-  <animation>
-    <type>select</type>
-    <object-name>shadowOSG</object-name>
-    <condition>
-      <equals>
-        <property>sim[0]/rendering/shadows-ai</property>
-        <value>true</value>
-      </equals>
-    </condition>
-  </animation>
 
   <!-- Interior -->
   <model>
@@ -198,6 +229,285 @@
       <x-m> 0 </x-m>
       <y-m> 0 </y-m>
       <z-m> 0 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Cranking effects -->
+  <!-- Avant gauche -->
+  <model>
+    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -5.005 </x-m>
+      <y-m> -0.523 </y-m>
+      <z-m>  0.014 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -5.197 </x-m>
+      <y-m> -0.523 </y-m>
+      <z-m>  0.014 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -5.389 </x-m>
+      <y-m> -0.523 </y-m>
+      <z-m>  0.014 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -5.581 </x-m>
+      <y-m> -0.523 </y-m>
+      <z-m>  0.014 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -5.773 </x-m>
+      <y-m> -0.523 </y-m>
+      <z-m>  0.014 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -5.965 </x-m>
+      <y-m> -0.523 </y-m>
+      <z-m>  0.014 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Avant droit -->
+  <model>
+    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -5.005 </x-m>
+      <y-m>  0.523 </y-m>
+      <z-m>  0.014 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -5.197 </x-m>
+      <y-m>  0.523 </y-m>
+      <z-m>  0.014 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -5.389 </x-m>
+      <y-m>  0.523 </y-m>
+      <z-m>  0.014 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -5.581 </x-m>
+      <y-m>  0.523 </y-m>
+      <z-m>  0.014 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -5.773 </x-m>
+      <y-m>  0.523 </y-m>
+      <z-m>  0.014 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -5.965 </x-m>
+      <y-m>  0.523 </y-m>
+      <z-m>  0.014 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Arrière gauche -->
+  <model>
+    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m>  0.766 </x-m>
+      <y-m> -0.581 </y-m>
+      <z-m>  0.464 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m>  0.958 </x-m>
+      <y-m> -0.581 </y-m>
+      <z-m>  0.464 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m>  1.150 </x-m>
+      <y-m> -0.581 </y-m>
+      <z-m>  0.464 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m>  1.342 </x-m>
+      <y-m> -0.581 </y-m>
+      <z-m>  0.464 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m>  1.534 </x-m>
+      <y-m> -0.581 </y-m>
+      <z-m>  0.464 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m>  1.726 </x-m>
+      <y-m> -0.581 </y-m>
+      <z-m>  0.464 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Arrière droit -->
+  <model>
+    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> 0.766 </x-m>
+      <y-m> 0.581 </y-m>
+      <z-m> 0.464 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> 0.958 </x-m>
+      <y-m> 0.581 </y-m>
+      <z-m> 0.464 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> 1.150 </x-m>
+      <y-m> 0.581 </y-m>
+      <z-m> 0.464 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> 1.342 </x-m>
+      <y-m> 0.581 </y-m>
+      <z-m> 0.464 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> 1.534 </x-m>
+      <y-m> 0.581 </y-m>
+      <z-m> 0.464 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> 1.726 </x-m>
+      <y-m> 0.581 </y-m>
+      <z-m> 0.464 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Effets sur le sol -->
+  <!-- Roue avant -->
+  <model>
+    <path>Aircraft/DO-335/Models/Effects/ground/ground2.xml</path>   
+    <offsets>
+      <x-m> -4.897 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -2.390 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Roue gauche -->
+  <model>
+    <path>Aircraft/DO-335/Models/Effects/ground/ground0.xml</path>
+    <offsets>
+      <x-m> -0.840 </x-m>
+      <y-m> -2.794 </y-m>
+      <z-m> -2.396 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Roue droite -->
+  <model>
+    <path>Aircraft/DO-335/Models/Effects/ground/ground1.xml</path>
+    <offsets>
+      <x-m> -0.840 </x-m>
+      <y-m>  2.794 </y-m>
+      <z-m> -2.396 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Effets de tir -->
+  <!-- Gauche -->
+  <model>
+    <path>Aircraft/D510/Models/Effects/guns/fire.xml</path>
+    <offsets>
+      <x-m> -3.994 </x-m>
+      <y-m> -2.092 </y-m>
+      <z-m> -0.170 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> 180 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Droit -->
+  <model>
+    <path>Aircraft/D510/Models/Effects/guns/fire.xml</path>
+    <offsets>
+      <x-m> -3.994 </x-m>
+      <y-m>  2.092 </y-m>
+      <z-m> -0.170 </z-m>
+     <roll-deg>    0 </roll-deg>
+      <pitch-deg> 180 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
