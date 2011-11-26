@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<!-- Bump and specular effect-->
 <PropertyList>
+
   <name>Aircraft/DO-335/Models/Effects/BumpMap/bumpmap</name>
   <inherits-from>Effects/bumpspec</inherits-from>
   <parameters>
@@ -12,4 +14,5 @@
       <internal-format>normalized</internal-format>
     </texture>
   </parameters>
+
 </PropertyList>
