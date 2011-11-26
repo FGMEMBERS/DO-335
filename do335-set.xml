@@ -4,8 +4,17 @@
 <PropertyList include="do335-yasim-cnf.xml">
 
   <sim>
-    <description>Dornier Do 335</description>
+
+    <description>Dornier Do 335 (YASim)</description>
     <author>Emmanuel BARANGER (3D/FDM), Pierre GEOFFROY (FDM)</author>
+
+    <rating>
+     <FDM type="int">     2 </FDM>
+     <systems type="int"> 2 </systems>
+     <cockpit type="int"> 2 </cockpit>
+     <model type="int">   4 </model>
+    </rating>
+
   </sim>
 
 </PropertyList>
