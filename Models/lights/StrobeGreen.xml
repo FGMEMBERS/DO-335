@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
-
-  <path>RedLight.ac</path>
+  
+  <path>GreenLight.ac</path>
 
   <animation>
     <type>noshadow</type>
@@ -33,7 +33,7 @@
     <type>select</type>
     <object-name>Light</object-name>
     <condition>
-      <property>/sim/model/lights/beacon/state</property>
+      <property>/sim/model/lights/sbc1/state</property>
     </condition>
   </animation>
 
@@ -41,13 +41,13 @@
     <type>material</type>
     <object-name>Light</object-name>
     <emission>
-      <red>   2 </red>
-      <green> 0 </green>
+      <red>   0 </red>
+      <green> 2 </green>
       <blue>  0 </blue>
       <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
-
+ 
   <animation>
     <type>dist-scale</type>
     <object-name>Light</object-name>

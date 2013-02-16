@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!-- Attitude/Turn Indicator -->
 
@@ -105,8 +105,8 @@
     <object-name>BallTurn</object-name>
     <property>/instrumentation/slip-skid-ball/indicated-slip-skid</property>
     <interpolation>
-      <entry><ind>  -1.1 </ind><dep> -22.0 </dep></entry>
-      <entry><ind>   1.1 </ind><dep>  22.0 </dep></entry>
+      <entry><ind>  -1.1 </ind><dep> -22 </dep></entry>
+      <entry><ind>   1.1 </ind><dep>  22 </dep></entry>
     </interpolation>
     <center>
       <x-m> 0.001 </x-m>

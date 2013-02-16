@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!-- Dornier Do 335 - 2008 Emmanuel BARANGER 2010
 
@@ -16,21 +16,21 @@
   <approach speed="112" aoa="5">
     <control-setting axis="/controls/engines/engine[0]/throttle" value="0.2"/>
     <control-setting axis="/controls/engines/engine[1]/throttle" value="0.2"/>
-    <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
-    <control-setting axis="/controls/engines/engine[1]/mixture" value="1.0"/>
-    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1.0"/>
-    <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="1.0"/>
-    <control-setting axis="/controls/flight/flaps" value="1.0"/>
+    <control-setting axis="/controls/engines/engine[0]/mixture" value="1"/>
+    <control-setting axis="/controls/engines/engine[1]/mixture" value="1"/>
+    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/flight/flaps" value="1"/>
     <control-setting axis="/controls/gear/gear-down" value="1"/>
   </approach>
 
   <cruise speed="412" alt="20000">
-    <control-setting axis="/controls/engines/engine[0]/throttle" value="1.0"/>
-    <control-setting axis="/controls/engines/engine[1]/throttle" value="1.0"/>
-    <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
-    <control-setting axis="/controls/engines/engine[1]/mixture" value="1.0"/>
-    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1.0"/>
-    <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="1.0"/>
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="1"/>
+    <control-setting axis="/controls/engines/engine[1]/throttle" value="1"/>
+    <control-setting axis="/controls/engines/engine[0]/mixture" value="1"/>
+    <control-setting axis="/controls/engines/engine[1]/mixture" value="1"/>
+    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="1"/>
     <control-setting axis="/controls/flight/flaps" value="0.0"/>
     <control-setting axis="/controls/gear/gear-down" value="0"/>
   </cruise>
@@ -143,7 +143,7 @@
 
   <propeller x="-1.510" y="0" z="0.049"
              mass="2835"  
-             moment="94" 
+             moment="-94" 
              radius="1.83"
              cruise-power="1325" 
              cruise-speed="370"
@@ -173,7 +173,7 @@
   </propeller>
 
   <gear x="4.897" y="0.00" z="-2.390" 
-        compression=".2" 
+        compression="0.2" 
         retract-time="7">
         <control-input axis="/controls/flight/rudder" control="STEER"/>
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
@@ -183,7 +183,7 @@
   </gear>
 
   <gear x="0.840" y="2.794" z="-2.396"
-        compression=".2" 
+        compression="0.2" 
         retract-time="7">
         <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
@@ -194,7 +194,7 @@
   </gear>
 
   <gear x="0.840" y="-2.794" z="-2.396"
-        compression=".2" 
+        compression="0.2" 
         retract-time="7">
         <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
@@ -204,12 +204,12 @@
         <control-output control="EXTEND" prop="/gear/gear[2]/position-norm"/>
   </gear>
 
-  <tank x="1.0" y="4.30" z="0.046" capacity="300"/>
-  <tank x="1.0" y="1.02" z="-0.15" capacity="189"/>
-  <tank x="1.0" y="-1.02" z="-0.15" capacity="189"/>
-  <tank x="1.0" y="-4.30" z="0.046" capacity="300"/>
+  <tank x="1" y=" 4.30" z=" 0.046" capacity="300"/>
+  <tank x="1" y=" 1.02" z="-0.150" capacity="189"/>
+  <tank x="1" y="-1.02" z="-0.150" capacity="189"/>
+  <tank x="1" y="-4.30" z=" 0.046" capacity="300"/>
 
-  <!-- CG theorique x=0.894 y=0 z=-0.248 -->
-  <ballast x="1" y="0.0" z="-8.0" mass="350"/>
+  <!-- Mass displacment -->
+  <ballast x="1" y="0" z="-8" mass="350"/>
 
 </airplane>

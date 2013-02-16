@@ -32,8 +32,10 @@
     <object-name>fuselage</object-name>
     <object-name>aileronD</object-name>
     <object-name>aileronG</object-name>
-    <object-name>gouverne</object-name>
-    <object-name>profondeur</object-name>
+    <object-name>directionH</object-name>
+    <object-name>directionB</object-name>
+    <object-name>profondeurG</object-name>
+    <object-name>profondeurD</object-name>
     <object-name>flapD</object-name>
     <object-name>flapG</object-name>
     <object-name>porteG</object-name>
@@ -94,8 +96,10 @@
     <object-name>fuselage</object-name>
     <object-name>aileronD</object-name>
     <object-name>aileronG</object-name>
-    <object-name>gouverne</object-name>
-    <object-name>profondeur</object-name>
+    <object-name>directionH</object-name>
+    <object-name>directionB</object-name>
+    <object-name>profondeurG</object-name>
+    <object-name>profondeurD</object-name>
     <object-name>flapD</object-name>
     <object-name>flapG</object-name>
     <object-name>porteG</object-name>
@@ -145,35 +149,16 @@
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
-<!--
-    <diffuse>
-      <red-prop>diffuse/red</red-prop>
-      <green-prop>diffuse/green</green-prop>
-      <blue-prop>diffuse/blue</blue-prop>
-    </diffuse>
-
-    <ambient>
-      <red-prop>ambient/red</red-prop>
-      <green-prop>ambient/green</green-prop>
-      <blue-prop>ambient/blue</blue-prop>
-    </ambient>
--->
     <specular>
       <red-prop>specular/red</red-prop>
       <green-prop>specular/green</green-prop>
       <blue-prop>specular/blue</blue-prop>
     </specular>
-
     <emission>
       <red-prop>emission/red</red-prop>
       <green-prop>emission/green</green-prop>
       <blue-prop>emission/blue</blue-prop>
     </emission>
-<!--
-    <shininess>
-      <shininess-prop>shininess</shininess-prop>
-    </shininess>
--->
   </animation>
 
   <effect>
@@ -181,8 +166,10 @@
     <object-name>fuselage</object-name>
     <object-name>aileronD</object-name>
     <object-name>aileronG</object-name>
-    <object-name>gouverne</object-name>
-    <object-name>profondeur</object-name>
+    <object-name>directionH</object-name>
+    <object-name>directionB</object-name>
+    <object-name>profondeurG</object-name>
+    <object-name>profondeurD</object-name>
     <object-name>flapD</object-name>
     <object-name>flapG</object-name>
     <object-name>porteG</object-name>
@@ -573,7 +560,7 @@
     <type>spin</type>
     <object-name>HeliceCompleteA</object-name>
     <property>engines/engine[0]/rpm</property>
-    <factor> 1 </factor>
+    <factor> -1 </factor>
     <center>
       <x-m> -6.640 </x-m>
       <y-m>  0.000 </y-m>
@@ -639,7 +626,7 @@
     <type>spin</type>
     <object-name>HeliceCompleteB</object-name>
     <property>engines/engine[1]/rpm</property>
-    <factor> -1 </factor>
+    <factor> 1 </factor>
     <center>
       <x-m> 6.454 </x-m>
       <y-m> 0.000 </y-m>
@@ -655,36 +642,62 @@
   <!-- Gouverne de direction -->
   <animation>
     <type>rotate</type>
-    <object-name>gouverne</object-name>
+    <object-name>directionH</object-name>
     <property>surface-positions/rudder-pos-norm</property>
-    <factor> 20 </factor>
-    <center>
-      <x-m> 5.394 </x-m>
-      <y-m> 0.000 </y-m>
-      <z-m> 0.428 </z-m>
-    </center>
+    <factor> -15 </factor>
     <axis>
-      <x>  0 </x>
-      <y>  0 </y>
-      <z> -1 </z>
+      <x1-m> 5.41215 </x1-m>
+      <y1-m> 0.00000 </y1-m>
+      <z1-m> 0.99709 </z1-m>
+      <x2-m> 5.43903 </x2-m>
+      <y2-m> 0.00000 </y2-m>
+      <z2-m> 2.22010 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>directionB</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> -15 </factor>
+    <axis>
+      <x1-m>  5.46012 </x1-m>
+      <y1-m>  0.00000 </y1-m>
+      <z1-m> -1.07903 </z1-m>
+      <x2-m>  5.43885 </x2-m>
+      <y2-m>  0.00000 </y2-m>
+      <z2-m> -0.14109 </z2-m>
     </axis>
   </animation>
 
   <!-- Gouverne de profondeur -->
   <animation>
     <type>rotate</type>
-    <object-name>profondeur</object-name>
+    <object-name>profondeurG</object-name>
     <property>surface-positions/elevator-pos-norm</property>
-    <factor> 10 </factor>
-    <center>
-      <x-m> 5.275 </x-m>
-      <y-m> 0.000 </y-m>
-      <z-m> 0.614 </z-m>
-    </center>
+    <factor> 15 </factor>
     <axis>
-      <x> 0 </x>
-      <y> 1 </y>
-      <z> 0 </z>
+      <x1-m>  5.30186 </x1-m>
+      <y1-m> -2.56869 </y1-m>
+      <z1-m>  0.69367 </z1-m>
+      <x2-m>  5.30842 </x2-m>
+      <y2-m> -0.35310 </y2-m>
+      <z2-m>  0.62519 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>profondeurD</object-name>
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor> -15 </factor>
+    <axis>
+      <x1-m>  5.30842 </x1-m>
+      <y1-m> -0.35310 </y1-m>
+      <z1-m>  0.62519 </z1-m>
+      <x2-m>  5.30186 </x2-m>
+      <y2-m> -2.56869 </y2-m>
+      <z2-m>  0.69367 </z2-m>
     </axis>
   </animation>
 
@@ -695,12 +708,12 @@
     <property>surface-positions/left-aileron-pos-norm</property>
     <factor> 18 </factor>
     <axis>
-      <x1-m>  0.329 </x1-m>
-      <y1-m> -6.308 </y1-m>
-      <z1-m>  0.192 </z1-m>
-      <x2-m>  0.329 </x2-m>
-      <y2-m> -3.348 </y2-m>
-      <z2-m> -0.100 </z2-m>
+      <x1-m>  0.35382 </x1-m>
+      <y1-m> -6.30788 </y1-m>
+      <z1-m>  0.19174 </z1-m>
+      <x2-m>  0.37457 </x2-m>
+      <y2-m> -3.34797 </y2-m>
+      <z2-m> -0.09956 </z2-m>
     </axis>
   </animation>
 
@@ -710,12 +723,12 @@
     <property>surface-positions/right-aileron-pos-norm</property>
     <factor> 18 </factor>
     <axis>
-     <x1-m>  0.329 </x1-m>
-     <y1-m>  3.348 </y1-m>
-     <z1-m> -0.100 </z1-m>
-     <x2-m>  0.329 </x2-m>
-     <y2-m>  6.308 </y2-m>
-     <z2-m>  0.192 </z2-m>
+      <x1-m>  0.37457 </x1-m>
+      <y1-m>  3.34797 </y1-m>
+      <z1-m> -0.09956 </z1-m>
+      <x2-m>  0.35382 </x2-m>
+      <y2-m>  6.30788 </y2-m>
+      <z2-m>  0.19174 </z2-m>
     </axis>
   </animation>
 
@@ -1351,6 +1364,61 @@
       <z>  0 </z>
     </axis>
   </animation>
+
+  <!-- Ajout des effets lumineux -->
+  <model>
+    <path>Aircraft/DO-335/Models/lights/beacon.xml</path>
+    <offsets>
+      <x-m> 5.13138 </x-m>
+      <y-m> 0.00000 </y-m>
+      <z-m> 2.43553 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DO-335/Models/lights/beacon.xml</path>
+    <offsets>
+      <x-m> -0.91402 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.63226 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DO-335/Models/lights/RedLight.xml</path>
+    <offsets>
+      <x-m> -0.48060 </x-m>
+      <y-m> -6.88645 </y-m>
+      <z-m>  0.24249 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DO-335/Models/lights/StrobeLight.xml</path>
+    <offsets>
+      <x-m> -0.32987 </x-m>
+      <y-m> -6.88645 </y-m>
+      <z-m>  0.24249 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DO-335/Models/lights/GreenLight.xml</path>
+    <offsets>
+      <x-m> -0.48060 </x-m>
+      <y-m>  6.88645 </y-m>
+      <z-m>  0.24249 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DO-335/Models/lights/StrobeLight.xml</path>
+    <offsets>
+      <x-m> -0.32987 </x-m>
+      <y-m>  6.88645 </y-m>
+      <z-m>  0.24249 </z-m>
+    </offsets>
+  </model>
 
 </PropertyList>
 

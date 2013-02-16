@@ -1,12 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
   <sim include="Nasal/views.xml">
 
+    <description>Dornier Do 335 (Yasim)</description>
+    <author>Emmanuel BARANGER (3D/FDM)</author>
     <status>devel</status>
-    <author>BARANGER Emmanuel</author>
-
+    
     <fuel-fraction>1.0</fuel-fraction>
 
     <sound>
@@ -103,6 +104,7 @@
     <do335>
       <file>Aircraft/DO-335/Nasal/liveries.nas</file>
       <file>Aircraft/DO-335/Nasal/light.nas</file>
+      <file>Aircraft/DO-335/Nasal/rpm.nas</file>
     </do335>
     <guns>
       <file>Aircraft/DO-335/Nasal/weapons.nas</file>
