@@ -2,7 +2,7 @@
 
 <PropertyList>
 
-  <sim include="Nasal/views.xml">
+  <sim include="Systems/views.xml">
 
     <description>Dornier Do 335 (Yasim)</description>
     <author>Emmanuel BARANGER (3D/FDM)</author>
@@ -42,32 +42,30 @@
         <int type="int" n="5">  0 </int>                                      <!-- 5 immat -->
         <int type="bool" n="6"> 1 </int>                                      <!-- 6 smoke/bomb/torpedo -->
         <int type="int" n="7">  0 </int>                                      <!-- 7 color -->
-        <int type="int" n="10" alias="controls/armament/trigger">0</int>      <!-- 10 reserved for bombable mode -->
         <int n="8" alias="/systems/electrical/outputs/nav-lights">  0 </int>  <!-- 8 nav-lights -->
         <int n="9" alias="/sim/model/lights/beacon/state">  false </int>      <!-- 9 strobe-lights -->
         <int n="10" alias="/controls/electric/key-pos">  0 </int>             <!-- 10 key position -->
-        <float n="2" alias="/position/gear-agl-m">  0 </float>                <!-- 11 altitude for MP shadow -->
-        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
-        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>  
-        <string n="9" type="string" />                                        <!-- string[9] reserved for bombable mode -->
+        <float n="0" alias="/sim/model/door-positions/crew/position-norm"/>
+        <float n="1" alias="/sim/model/door-positions/passenger/position-norm"/>
+        <float n="2" alias="/position/gear-agl-m"> 0 </float>                         <!-- altitude for MP shadow -->
+        <float n="3" alias="/position/altitude-ft"> 0 </float>                        <!-- altitude for Smoke/Trail -->
+        <float n="4" alias="/engines/engine[0]/rpm"/>
+        <float n="5" alias="/engines/engine[0]/cranking"/>
+        <float n="6" alias="/engines/engine[1]/rpm"/>
+        <float n="7" alias="/engines/engine[1]/cranking"/>
+        <float n="8" alias="/gear/gear[0]/wow/"/>
+        <float n="9" alias="/gear/gear[1]/wow/"/>
+        <float n="10" alias="/gear/gear[2]/wow/"/>
+        <float n="11" alias="/gear/gear[0]/rollspeed-ms"/>
+        <float n="12" alias="/gear/gear[1]/rollspeed-ms"/>
+        <float n="13" alias="/gear/gear[2]/rollspeed-ms"/>
+        <!-- For Bombable -->
+        <int type="int" n="10" alias="controls/armament/trigger">0</int>
+        <string n="9" type="string" />
       </generic>
     </multiplay>
 
-    <help>
-      <title>Dornier Do 335</title>
-      <key>
-        <name>d</name>
-        <desc>Open/Close canopy</desc>
-      </key>
-      <key>
-        <name>D</name>
-        <desc>Open/Close valves</desc>
-      </key>
-      <key>
-        <name>e</name>
-        <desc>Guns fire</desc>
-      </key>
-    </help>
+    <help include="Systems/help.xml"/>
 
     <menubar include="Dialogs/do335-menu.xml"/>
 
@@ -94,7 +92,7 @@
   </consumables>
 
   <input>
-    <keyboard include="Nasal/do335-keyboard.xml"/>
+    <keyboard include="Systems/do335-keyboard.xml"/>
   </input>
 
   <nasal>
@@ -104,7 +102,6 @@
     <do335>
       <file>Aircraft/DO-335/Nasal/liveries.nas</file>
       <file>Aircraft/DO-335/Nasal/light.nas</file>
-      <file>Aircraft/DO-335/Nasal/rpm.nas</file>
     </do335>
     <guns>
       <file>Aircraft/DO-335/Nasal/weapons.nas</file>
@@ -112,4 +109,3 @@
   </nasal>
 
 </PropertyList>
-

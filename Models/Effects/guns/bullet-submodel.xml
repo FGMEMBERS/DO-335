@@ -4,7 +4,7 @@
 
   <submodel>
     <name>bullet splash</name>
-    <model>Aircraft/DO-335/Models/Effects/guns/explosion.xml</model>
+    <model>Aircraft/DO-335/Models/Effects/guns/flack.xml</model>
     <speed>0</speed>
     <repeat>false</repeat>
     <delay>0</delay>
@@ -19,7 +19,7 @@
     <buoyancy>32.1</buoyancy>
     <aero-stabilised>false</aero-stabilised>
     <fuse-range>0</fuse-range>
-    <life>4</life>
+    <life>6</life>
   </submodel>
 
 </PropertyList>

@@ -8,7 +8,7 @@ name "AttitudeBall"
 loc 0 0 -0
 data 12
 AttitudeBall
-texture "colors.png"
+texture "ai.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 243
@@ -2022,7 +2022,7 @@ name "BallTurn"
 loc 0 0 -0
 data 8
 BallTurn
-texture "colors.png"
+texture "ai.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 514
@@ -6024,7 +6024,7 @@ name "FaceTurn"
 loc 0 0 -0
 data 8
 FaceTurn
-texture "colors.png"
+texture "ai.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 38
@@ -6269,7 +6269,7 @@ name "SkyPointer"
 loc 0 0 -0
 data 10
 SkyPointer
-texture "colors.png"
+texture "ai.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10
@@ -6325,7 +6325,7 @@ name "barre"
 loc 0 0 -0
 data 5
 barre
-texture "colors.png"
+texture "ai.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 109
@@ -7255,7 +7255,7 @@ name "barre1"
 loc 0 0 -0
 data 6
 barre1
-texture "colors.png"
+texture "ai.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10
@@ -7311,7 +7311,7 @@ name "barre2"
 loc 0 0 -0
 data 6
 barre2
-texture "colors.png"
+texture "ai.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10
@@ -7367,7 +7367,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "colors.png"
+texture "ai.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 405
@@ -10520,7 +10520,7 @@ name "visses"
 loc 0 0 -0
 data 6
 visses
-texture "colors.png"
+texture "ai.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 736

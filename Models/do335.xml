@@ -13,9 +13,9 @@
       var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
       var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
       
-      var crew_door = self.getNode("instrumentation/doors/crew/position-norm", 1);
-      var passenger_door = self.getNode("instrumentation/doors/passenger/position-norm", 1);
-    
+      var crew_door = self.getNode("sim/model/door-positions/crew/position-norm", 1);
+      var passenger_door = self.getNode("sim/model/door-positions/passenger/position-norm", 1);
+      
       crew_door.alias(float_0);
       passenger_door.alias(float_1);
     </load>
@@ -154,11 +154,6 @@
       <green-prop>specular/green</green-prop>
       <blue-prop>specular/blue</blue-prop>
     </specular>
-    <emission>
-      <red-prop>emission/red</red-prop>
-      <green-prop>emission/green</green-prop>
-      <blue-prop>emission/blue</blue-prop>
-    </emission>
   </animation>
 
   <effect>
@@ -199,24 +194,23 @@
     <object-name>cacheguns</object-name>
   </effect>
 
-  <animation>
-    <type>noshadow</type>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/DO-335/Models/Effects/Glass/glass</inherits-from>
+    <object-name>vitres</object-name>
+    <object-name>verriere2</object-name>
+  </effect>
+  
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>vitres</object-name>
     <object-name>verriere2</object-name>
     <object-name>propblurA</object-name>
     <object-name>propblurB</object-name>
     <object-name>propdiscA</object-name>
     <object-name>propdiscB</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>vitres</object-name>
-    <object-name>verriere2</object-name>
-  </animation>
-
+  </effect>
+  
   <!-- Une ombre pour OSG -->
   <model>
     <path>Aircraft/DO-335/Models/shadow.xml</path>
@@ -233,226 +227,10 @@
   </model>
 
   <!-- Cranking effects -->
-  <!-- Avant gauche -->
   <model>
-    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
-    <offsets>
-      <x-m> -5.005 </x-m>
-      <y-m> -0.523 </y-m>
-      <z-m>  0.014 </z-m>
-    </offsets>
+    <path>Aircraft/DO-335/Models/Effects/cranking/all-cranking.xml</path>
   </model>
-
-  <model>
-    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
-    <offsets>
-      <x-m> -5.197 </x-m>
-      <y-m> -0.523 </y-m>
-      <z-m>  0.014 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
-    <offsets>
-      <x-m> -5.389 </x-m>
-      <y-m> -0.523 </y-m>
-      <z-m>  0.014 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
-    <offsets>
-      <x-m> -5.581 </x-m>
-      <y-m> -0.523 </y-m>
-      <z-m>  0.014 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
-    <offsets>
-      <x-m> -5.773 </x-m>
-      <y-m> -0.523 </y-m>
-      <z-m>  0.014 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
-    <offsets>
-      <x-m> -5.965 </x-m>
-      <y-m> -0.523 </y-m>
-      <z-m>  0.014 </z-m>
-    </offsets>
-  </model>
-
-  <!-- Avant droit -->
-  <model>
-    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
-    <offsets>
-      <x-m> -5.005 </x-m>
-      <y-m>  0.523 </y-m>
-      <z-m>  0.014 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
-    <offsets>
-      <x-m> -5.197 </x-m>
-      <y-m>  0.523 </y-m>
-      <z-m>  0.014 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
-    <offsets>
-      <x-m> -5.389 </x-m>
-      <y-m>  0.523 </y-m>
-      <z-m>  0.014 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
-    <offsets>
-      <x-m> -5.581 </x-m>
-      <y-m>  0.523 </y-m>
-      <z-m>  0.014 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
-    <offsets>
-      <x-m> -5.773 </x-m>
-      <y-m>  0.523 </y-m>
-      <z-m>  0.014 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
-    <offsets>
-      <x-m> -5.965 </x-m>
-      <y-m>  0.523 </y-m>
-      <z-m>  0.014 </z-m>
-    </offsets>
-  </model>
-
-  <!-- Arrière gauche -->
-  <model>
-    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
-    <offsets>
-      <x-m>  0.766 </x-m>
-      <y-m> -0.581 </y-m>
-      <z-m>  0.464 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
-    <offsets>
-      <x-m>  0.958 </x-m>
-      <y-m> -0.581 </y-m>
-      <z-m>  0.464 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
-    <offsets>
-      <x-m>  1.150 </x-m>
-      <y-m> -0.581 </y-m>
-      <z-m>  0.464 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
-    <offsets>
-      <x-m>  1.342 </x-m>
-      <y-m> -0.581 </y-m>
-      <z-m>  0.464 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
-    <offsets>
-      <x-m>  1.534 </x-m>
-      <y-m> -0.581 </y-m>
-      <z-m>  0.464 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
-    <offsets>
-      <x-m>  1.726 </x-m>
-      <y-m> -0.581 </y-m>
-      <z-m>  0.464 </z-m>
-    </offsets>
-  </model>
-
-  <!-- Arrière droit -->
-  <model>
-    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
-    <offsets>
-      <x-m> 0.766 </x-m>
-      <y-m> 0.581 </y-m>
-      <z-m> 0.464 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
-    <offsets>
-      <x-m> 0.958 </x-m>
-      <y-m> 0.581 </y-m>
-      <z-m> 0.464 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
-    <offsets>
-      <x-m> 1.150 </x-m>
-      <y-m> 0.581 </y-m>
-      <z-m> 0.464 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
-    <offsets>
-      <x-m> 1.342 </x-m>
-      <y-m> 0.581 </y-m>
-      <z-m> 0.464 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
-    <offsets>
-      <x-m> 1.534 </x-m>
-      <y-m> 0.581 </y-m>
-      <z-m> 0.464 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/DO-335/Models/Effects/cranking/cranking.xml</path>
-    <offsets>
-      <x-m> 1.726 </x-m>
-      <y-m> 0.581 </y-m>
-      <z-m> 0.464 </z-m>
-    </offsets>
-  </model>
-
+  
   <!-- Effets sur le sol -->
   <!-- Roue avant -->
   <model>
@@ -559,6 +337,12 @@
   <animation>
     <type>spin</type>
     <object-name>HeliceCompleteA</object-name>
+    <condition>
+      <greater-than>
+        <property>engines/engine[0]/rpm</property>
+        <value> 5 </value>
+      </greater-than>
+    </condition>
     <property>engines/engine[0]/rpm</property>
     <factor> -1 </factor>
     <center>
@@ -625,6 +409,12 @@
   <animation>
     <type>spin</type>
     <object-name>HeliceCompleteB</object-name>
+    <condition>
+      <greater-than>
+        <property>engines/engine[1]/rpm</property>
+        <value> 5 </value>
+      </greater-than>
+    </condition>
     <property>engines/engine[1]/rpm</property>
     <factor> 1 </factor>
     <center>
@@ -1334,9 +1124,23 @@
   </animation>
 
   <animation>
+    <type>pick</type>
+    <object-name>CanopyComplete</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
     <type>translate</type>
     <object-name>CanopyComplete</object-name>
-    <property>/instrumentation/doors/crew/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <interpolation>
       <entry><ind> 0.00 </ind><dep> 0.00 </dep></entry>
       <entry><ind> 0.20 </ind><dep> 0.19 </dep></entry>
@@ -1352,7 +1156,7 @@
   <animation>
     <type>translate</type>
     <object-name>CanopyComplete</object-name>
-    <property>/instrumentation/doors/crew/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep> 0.0 </dep></entry>
       <entry><ind> 0.2 </ind><dep> 0.0 </dep></entry>
@@ -1421,4 +1225,3 @@
   </model>
 
 </PropertyList>
-

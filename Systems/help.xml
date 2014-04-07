@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <title>Dornier Do 335</title>
+  <key>
+    <name>d</name>
+    <desc>Open/Close canopy</desc>
+  </key>
+  <key>
+    <name>D</name>
+    <desc>Open/Close valves</desc>
+  </key>
+  <key>
+    <name>e</name>
+    <desc>Guns fire</desc>
+  </key>
+
+</PropertyList>

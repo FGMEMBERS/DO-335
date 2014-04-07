@@ -15,10 +15,10 @@
 
   <approach speed="112" aoa="5">
     <control-setting axis="/controls/engines/engine[0]/throttle" value="0.2"/>
-    <control-setting axis="/controls/engines/engine[1]/throttle" value="0.2"/>
     <control-setting axis="/controls/engines/engine[0]/mixture" value="1"/>
-    <control-setting axis="/controls/engines/engine[1]/mixture" value="1"/>
     <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/engines/engine[1]/throttle" value="0.2"/>
+    <control-setting axis="/controls/engines/engine[1]/mixture" value="1"/>
     <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="1"/>
     <control-setting axis="/controls/flight/flaps" value="1"/>
     <control-setting axis="/controls/gear/gear-down" value="1"/>
@@ -26,12 +26,12 @@
 
   <cruise speed="412" alt="20000">
     <control-setting axis="/controls/engines/engine[0]/throttle" value="1"/>
-    <control-setting axis="/controls/engines/engine[1]/throttle" value="1"/>
     <control-setting axis="/controls/engines/engine[0]/mixture" value="1"/>
-    <control-setting axis="/controls/engines/engine[1]/mixture" value="1"/>
     <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/engines/engine[1]/throttle" value="1"/>
+    <control-setting axis="/controls/engines/engine[1]/mixture" value="1"/>
     <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="1"/>
-    <control-setting axis="/controls/flight/flaps" value="0.0"/>
+    <control-setting axis="/controls/flight/flaps" value="0"/>
     <control-setting axis="/controls/gear/gear-down" value="0"/>
   </cruise>
 
@@ -49,6 +49,7 @@
         <stall aoa="10" width="4" peak="1.5"/>
         <flap0 start="0.036" end="0.446" lift="1.5" drag="1.2"/>
         <flap1 start="0.446" end="0.914" lift="1.2" drag="1.3"/>
+        
         <control-input axis="/controls/flight/flaps" control="FLAP0"/>
         <control-input axis="/controls/flight/aileron" control="FLAP1" split="true"/>
         <control-input axis="/controls/flight/aileron-trim" control="FLAP1" split="true"/>
@@ -68,6 +69,7 @@
          taper="0.62">
          <stall aoa="10" width="14" peak="1.5"/>
          <flap0 start="0" end="1" lift="1.8" drag="1.8"/>
+         
          <control-input axis="/controls/flight/elevator" control="FLAP0"/>
          <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
 
@@ -81,6 +83,7 @@
          sweep="10">
          <stall aoa="10" width="4" peak="1.5"/>
          <flap0 start="0.1" end="0.85" lift="1.3" drag="1.2"/>
+         
          <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
          <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
 
@@ -95,6 +98,7 @@
          sweep="10">
          <stall aoa="10" width="4" peak="1.5"/>
          <flap0 start="0.2" end="0.8" lift="1.3" drag="1.2"/>
+         
          <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
          <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
 
@@ -188,9 +192,10 @@
         <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
-        <control-speed control="EXTEND" transition-time="6.2"/>
       
         <control-output control="EXTEND" prop="/gear/gear[1]/position-norm"/>
+        
+        <control-speed control="EXTEND" transition-time="6.2"/>
   </gear>
 
   <gear x="0.840" y="-2.794" z="-2.396"
@@ -199,9 +204,10 @@
         <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
-        <control-speed control="EXTEND" transition-time="6"/>
       
         <control-output control="EXTEND" prop="/gear/gear[2]/position-norm"/>
+        
+        <control-speed control="EXTEND" transition-time="6"/>
   </gear>
 
   <tank x="1" y=" 4.30" z=" 0.046" capacity="300"/>

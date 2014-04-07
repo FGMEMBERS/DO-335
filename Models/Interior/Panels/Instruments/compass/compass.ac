@@ -9,7 +9,7 @@ OBJECT poly
 name "compas"
 data 6
 compas
-texture "colors.png"
+texture "compass.png"
 texrep 1 1
 crease 30.000000
 numvert 50
@@ -485,7 +485,7 @@ OBJECT poly
 name "face"
 data 4
 face
-texture "colors.png"
+texture "compass.png"
 texrep 1 1
 crease 30.000000
 numvert 17
@@ -608,7 +608,7 @@ OBJECT poly
 name "fond"
 data 4
 fond
-texture "colors.png"
+texture "compass.png"
 texrep 1 1
 crease 30.000000
 numvert 173
@@ -2185,7 +2185,7 @@ OBJECT poly
 name "visses"
 data 6
 visses
-texture "colors.png"
+texture "compass.png"
 texrep 1 1
 crease 30.000000
 numvert 736

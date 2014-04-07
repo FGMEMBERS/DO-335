@@ -8,7 +8,7 @@ name "interieur"
 loc 0 0 -0
 data 9
 interieur
-texture "colors.png"
+texture "interior.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 69
@@ -550,7 +550,7 @@ name "inttour"
 loc 0 0 -0
 data 7
 inttour
-texture "colors.png"
+texture "interior.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 46
@@ -799,7 +799,7 @@ name "inttour2"
 loc -3.169624 0.78095 -0.000042
 data 8
 inttour2
-texture "colors.png"
+texture "interior.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 156
@@ -1848,7 +1848,7 @@ name "intverriere1"
 loc -2.563412 0.946379 -0.000044
 data 12
 intverriere1
-texture "colors.png"
+texture "interior.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 269

@@ -16,20 +16,13 @@
     <object-name>intverriere2</object-name>
   </animation>
 
-  <animation>
-    <type>noshadow</type>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/DO-335/Models/Effects/Glass/glass</inherits-from>
     <object-name>intvitres</object-name>
     <object-name>intverriere2</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>intvitres</object-name>
-    <object-name>intverriere2</object-name>
-  </animation>
-
+  </effect>
+  
   <!-- Pilote -->
   <model>
     <path>Aircraft/DO-335/Models/Pilot/pilot.xml</path>
@@ -58,9 +51,23 @@
   </animation>
   
   <animation>
+    <type>pick</type>
+    <object-name>IntLaVerriere</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
     <type>translate</type>
     <object-name>IntLaVerriere</object-name>
-    <property>/instrumentation/doors/crew/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <interpolation>
       <entry><ind> 0.00 </ind><dep> 0.00 </dep></entry>
       <entry><ind> 0.20 </ind><dep> 0.19 </dep></entry>
@@ -76,7 +83,7 @@
   <animation>
     <type>translate</type>
     <object-name>IntLaVerriere</object-name>
-    <property>/instrumentation/doors/crew/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep> 0.0 </dep></entry>
       <entry><ind> 0.2 </ind><dep> 0.0 </dep></entry>

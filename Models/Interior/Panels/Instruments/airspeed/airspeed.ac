@@ -9,7 +9,7 @@ OBJECT poly
 name "face"
 data 4
 face
-texture "colors.png"
+texture "airspeed.png"
 texrep 1 1
 crease 30.000000
 numvert 17
@@ -132,7 +132,7 @@ OBJECT poly
 name "fond"
 data 4
 fond
-texture "colors.png"
+texture "airspeed.png"
 texrep 1 1
 crease 30.000000
 numvert 353
@@ -1945,7 +1945,7 @@ OBJECT poly
 name "needle"
 data 6
 needle
-texture "colors.png"
+texture "airspeed.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -1983,7 +1983,7 @@ OBJECT poly
 name "visses"
 data 6
 visses
-texture "colors.png"
+texture "airspeed.png"
 texrep 1 1
 crease 30.000000
 numvert 736

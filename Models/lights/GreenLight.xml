@@ -9,15 +9,11 @@
     <object-name>Light</object-name>
   </animation>
 
-  <!--  REMBRANDT support for transparent objects
   <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
-    <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
-    </condition>
     <object-name>Light</object-name>
-  </effect> -->
-
+  </effect>
+  
   <animation>
     <type>alpha-test</type>
     <alpha-factor>0.01</alpha-factor>

@@ -9,7 +9,7 @@ OBJECT poly
 name "face"
 data 4
 face
-texture "colors.png"
+texture "clock.png"
 texrep 1 1
 crease 30.000000
 numvert 17
@@ -132,7 +132,7 @@ OBJECT poly
 name "fond"
 data 4
 fond
-texture "colors.png"
+texture "clock.png"
 texrep 1 1
 crease 30.000000
 numvert 171
@@ -1693,7 +1693,7 @@ OBJECT poly
 name "heures"
 data 6
 heures
-texture "colors.png"
+texture "clock.png"
 texrep 1 1
 crease 30.000000
 numvert 7
@@ -1730,7 +1730,7 @@ OBJECT poly
 name "minutes"
 data 7
 minutes
-texture "colors.png"
+texture "clock.png"
 texrep 1 1
 crease 30.000000
 numvert 7
@@ -1767,7 +1767,7 @@ OBJECT poly
 name "secondes"
 data 8
 secondes
-texture "colors.png"
+texture "clock.png"
 texrep 1 1
 crease 30.000000
 numvert 7
@@ -1804,7 +1804,7 @@ OBJECT poly
 name "visses"
 data 6
 visses
-texture "colors.png"
+texture "clock.png"
 texrep 1 1
 crease 30.000000
 numvert 736

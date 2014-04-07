@@ -4,18 +4,31 @@
 
   <path>light-cone.ac</path>
 
-   <!--  REMBRANDT support for transparent objects
+  <animation>
+    <object-name>Cone</object-name>
+    <object-name>Cone-texture</object-name>
+    <object-name>Light</object-name>
+  </animation> 
+  
   <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
-    <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
-    </condition>
-    <object-name>Cone</object-name>
-  </effect> -->
-
+    <object-name>Light</object-name>
+  </effect>
+  
   <effect>
     <inherits-from>Effects/light-cone</inherits-from>
     <object-name>Cone</object-name>
+    <object-name>Cone-texture</object-name>
   </effect>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Light</object-name>
+    <emission>
+      <red>   2 </red>
+      <green> 2 </green>
+      <blue>  2 </blue>
+    </emission>
+  </animation>
   
 </PropertyList>
