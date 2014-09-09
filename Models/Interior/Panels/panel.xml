@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <object-name>panel1</object-name>
+    <object-name>panel2</object-name>
+    <object-name>panel3</object-name>
+    <object-name>panel4</object-name>
+    <object-name>panel5</object-name>
+  </animation>
+
+  <model>
+    <path>Aircraft/DO-335/Models/Interior/Panels/Instruments/airspeed/airspeed.xml</path>
+    <offsets>
+      <x-m>  0.019 </x-m>
+      <y-m> -0.110 </y-m>
+      <z-m>  0.032 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DO-335/Models/Interior/Panels/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m>  0.019 </x-m>
+      <y-m> -0.027 </y-m>
+      <z-m>  0.032 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DO-335/Models/Interior/Panels/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m> 0.019 </x-m>
+      <y-m> 0.056 </y-m>
+      <z-m> 0.032 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DO-335/Models/Interior/Panels/Instruments/compass/compass.xml</path>
+    <offsets>
+      <x-m>  0.019 </x-m>
+      <y-m> -0.027 </y-m>
+      <z-m> -0.053 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DO-335/Models/Interior/Panels/Instruments/clock/clock.xml</path>
+    <offsets>
+      <x-m>  0.014 </x-m>
+      <y-m> -0.259 </y-m>
+      <z-m>  0.137 </z-m>
+    </offsets>
+  </model>
+ 
+</PropertyList>
