@@ -16,6 +16,18 @@
      <model type="int">   4 </model>
     </rating>
 
+    <tags>
+      <tag>1930s</tag>
+      <tag>ww2</tag>
+      <tag>dornier</tag>
+      <tag>fighter</tag>
+      <tag>retractable-gear</tag>
+      <tag>piston</tag>
+      <tag>twin-engine</tag>
+      <tag>tail-dragger</tag>
+      <tag>variable-pitch</tag>
+    </tags>
+
   </sim>
 
 </PropertyList>
